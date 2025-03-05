@@ -40,72 +40,57 @@ nav ul li a {
     font-size: 18px;
     padding: 10px 20px;
     border-radius: 8px;
-    display: flex;
-    align-items: center;
     transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
 }
 
 nav ul li a i {
     margin-right: 8px;
 }
 
-nav ul li a:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: scale(1.1);
-}
-
 /* Section Styling */
 .section {
-    padding: 80px 20px;
+    padding: 50px 20px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 70px;
+    border-bottom: 2px solid #f39c12;
 }
 
-/* Section Titles */
 h2 {
     font-size: 28px;
-    margin-bottom: 20px;
     color: #f39c12;
 }
 
-/* Footer Styling */
+.job, .project, .education-item {
+    background: #222;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.job:hover, .project:hover, .education-item:hover {
+    transform: scale(1.05);
+    background: #333;
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
     background: #111;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    color: #f39c12;
 }
 
-/* Hover Effects for Projects and Work Experience */
-.project, .job {
-    background: #222;
-    padding: 20px;
-    margin: 15px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease;
-}
-
-.project:hover, .job:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-}
-
-/* Date Styling */
-.date {
-    font-size: 14px;
-    color: #bbb;
-}
-
-/* Links Styling */
-a {
+footer a {
     color: #f39c12;
     text-decoration: none;
-    transition: all 0.3s ease;
 }
 
-a:hover {
-    color: #e67e22;
+/* Icon Styling */
+.fas, .fab {
+    color: #f39c12;
 }
