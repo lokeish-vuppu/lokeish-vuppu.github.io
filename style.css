@@ -31,6 +31,11 @@ nav a:hover {
     color: #f39c12; /* Hover color for navigation */
 }
 
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
 nav a::after {
     content: '';
     position: absolute;
