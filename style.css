@@ -9,7 +9,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #101010;
-    color: #fff;
+    color: #f0f0f0;
     line-height: 1.6;
     padding: 0;
     margin: 0;
@@ -18,7 +18,7 @@ body {
 
 /* Header */
 header {
-    background-color: #101010;
+    background-color: #202020;
     color: #fff;
     padding: 20px 0;
     position: fixed;
@@ -34,39 +34,36 @@ header {
 header .logo {
     font-size: 2.2em;
     font-weight: bold;
-    color: #fff;
-    text-align: left;
+    color: #4caf50;
+    text-align: center;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-left: 20px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: flex-end; /* Align navigation to the right */
-    padding: 15px 20px;
+    justify-content: center;
+    padding: 15px 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
+    position: relative;
 }
 
 nav ul li a {
-    color: #fff;
+    color: #e0e0e0;
     font-size: 1.2em;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 10px 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
     display: inline-block;
-    position: relative;
-    background-color: transparent;
-    border-radius: 12px; /* Rounded corners */
-    transition: all 0.3s ease;
+    padding: 10px 0;
 }
 
-/* Remove the line beneath the navigation items */
-nav ul li a::before {
+/* Remove underline from navigation items */
+nav ul li a::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -78,35 +75,19 @@ nav ul li a::before {
     transition: width 0.3s ease;
 }
 
+/* Hover Effect: White Line on Bottom */
 nav ul li a:hover {
-    color: #fff; /* Ensure hover color stays white */
-    background-color: rgba(255, 255, 255, 0.2); /* Subtle background on hover */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glowing effect */
+    color: #4caf50;
+    transform: translateY(-3px);
 }
 
-/* Rectangular hover effect with rounded corners */
-nav ul li a:hover::before {
+nav ul li a:hover::after {
     width: 100%;
+    background-color: white; /* White line on hover */
 }
 
-nav ul li a:hover {
-    animation: popUp 0.5s ease forwards;
-}
-
-@keyframes popUp {
-    0% {
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-        transform: scale(1);
-    }
-    100% {
-        box-shadow: 0 0 20px rgba(255, 255, 255, 1);
-        transform: scale(1.05);
-    }
-}
-
-/* Section Styles */
+/* Scroll Animations */
 section {
-    padding-top: 120px; /* Add padding for the fixed header */
     padding: 100px 20px;
     transition: all 0.3s ease;
     animation: fadeInUp 1.5s ease-out;
@@ -127,4 +108,19 @@ html {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* Section Styles */
+section {
+    padding-top: 120px; /* Add padding for the fixed header */
+    padding: 100px 20px;
+    min-height: 100vh; /* Ensure sections take up full height */
+}
+
+/* Footer */
+footer {
+    background-color: #101010;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
