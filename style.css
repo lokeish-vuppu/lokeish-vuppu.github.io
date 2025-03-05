@@ -1,60 +1,85 @@
-/* Base Styles */
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000000;
+    background-color: #000; /* Jet black background */
     color: #fff;
 }
 
-h1, h2, h3 {
-    margin: 0;
-    padding: 10px;
-}
-
-a {
-    color: #fff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Navigation Styles */
-nav {
+header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
+    background-color: #111;
+}
+
+header .name h1 {
+    margin: 0;
 }
 
 nav a {
-    padding: 10px;
+    color: #fff;
+    text-decoration: none;
     margin: 0 15px;
     font-size: 18px;
     position: relative;
-    transition: all 0.3s ease;
 }
 
-nav a::before {
-    content: "";
+nav a:hover {
+    color: #f39c12; /* Hover color for navigation */
+}
+
+nav a::after {
+    content: '';
     position: absolute;
-    width: 100%;
-    height: 5px;
-    background-color: #fff;
-    top: 0;
+    bottom: 0;
     left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #f39c12;
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
 
-nav a:hover::before {
+nav a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
-/* Hover Effect for Sections */
-section {
-    padding: 20px;
-   
+section h2 {
+    color: #00bcd4; /* Color for section headers */
+}
+
+#Contact p {
+    margin: 10px 0;
+}
+
+#Contact i {
+    color: #f39c12; /* Icon color */
+    margin-right: 10px;
+}
+
+#education, #skills, #certifications {
+    margin-top: 40px;
+}
+
+#education .education-item {
+    margin-bottom: 20px;
+}
+
+#education h3, #skills h2, #certifications h2 {
+    color: #f39c12;
+}
+
+.project, .job {
+    margin-bottom: 20px;
+}
+
+.project h3, .job h3 {
+    color: #f39c12; /* Header color for projects and jobs */
+}
+
+.project ul, .job
