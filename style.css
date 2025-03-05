@@ -7,35 +7,53 @@
 
 /* Body and General Style */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #121212;
-    color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #101010;
+    color: #f0f0f0;
     line-height: 1.6;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h2, h3 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
 }
 
 /* Header */
 header {
-    background-color: #1d1d1d;
-    padding: 20px 0;
-    text-align: center;
+    background-color: #202020;
     color: #fff;
-    position: sticky;
+    padding: 20px 0;
+    position: fixed;
     top: 0;
-    z-index: 10;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
-    font-size: 2.5em;
+    font-size: 2.2em;
     font-weight: bold;
+    color: #4caf50;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 nav ul li {
@@ -43,125 +61,249 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.1em;
-    transition: color 0.3s ease;
+    color: #e0e0e0;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #4caf50; /* Green hover color */
+    color: #4caf50;
+    transform: translateY(-3px);
 }
 
+/* Section Styles */
 section {
-    padding: 60px 20px;
+    padding: 100px 20px;
+    transition: all 0.3s ease;
 }
 
-h2 {
-    font-size: 2em;
+/* About Section */
+#about {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#about h2 {
+    font-size: 2.5em;
+    color: #4caf50;
     text-align: center;
     margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1em;
+    color: #ccc;
+    text-align: center;
+    line-height: 1.8;
+}
+
+/* Experience Section */
+#experience {
+    background-color: #252525;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#experience h2 {
+    font-size: 2.5em;
+    color: #4caf50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.job {
+    margin-bottom: 30px;
+}
+
+.job h3 {
+    font-size: 1.8em;
     color: #fff;
 }
 
-h3 {
-    font-size: 1.5em;
-    color: #e0e0e0;
+.job .date {
+    color: #888;
+    font-size: 1em;
+    margin-bottom: 15px;
 }
 
-/* Section Specific Styles */
-.about-section {
-    background-color: #1d1d1d;
-    color: #e0e0e0;
-}
-
-.job ul, .project ul {
-    list-style-type: none;
+.job ul {
     padding-left: 20px;
+    list-style-type: none;
 }
 
-.job li, .project li {
+.job li {
     margin: 10px 0;
+    font-size: 1.1em;
 }
 
-/* Education and Skills Section */
+/* Projects Section */
+#projects {
+    background-color: #1a1a1a;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#projects h2 {
+    font-size: 2.5em;
+    color: #4caf50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project {
+    margin-bottom: 30px;
+}
+
+.project h3 {
+    font-size: 1.8em;
+    color: #fff;
+}
+
+.project .date {
+    color: #888;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.project ul {
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+.project li {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+/* Education Section */
+#education {
+    background-color: #252525;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#education h2 {
+    font-size: 2.5em;
+    color: #4caf50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .education-item {
-    background-color: #1d1d1d;
-    padding: 10px;
+    background-color: #1a1a1a;
+    padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
-    transition: background-color 0.3s ease;
 }
 
-.education-item:hover {
-    background-color: #333;
+.education-item h3 {
+    color: #fff;
+    font-size: 1.6em;
 }
 
-ul {
-    padding-left: 20px;
+.education-item .date {
+    color: #888;
+    font-size: 1.2em;
+    margin-bottom: 15px;
 }
 
 /* Skills Section */
+#skills {
+    background-color: #1a1a1a;
+    margin-top: 50px;
+    padding: 50px 0;
+}
+
+#skills h2 {
+    font-size: 2.5em;
+    color: #4caf50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 ul li {
-    margin: 10px 0;
+    font-size: 1.2em;
+    color: #ccc;
+    margin-bottom: 10px;
 }
 
 /* Contact Section */
-section#contact p {
+#contact {
+    background-color: #252525;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding: 50px 0;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    color: #4caf50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#contact p {
     font-size: 1.2em;
     text-align: center;
-    margin: 10px 0;
+    color: #fff;
+    margin: 15px 0;
 }
 
-section#contact a {
+#contact a {
     color: #e0e0e0;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-section#contact a:hover {
+#contact a:hover {
     color: #4caf50;
+    transform: translateY(-3px);
 }
 
+/* Footer */
 footer {
-    background-color: #1d1d1d;
-    color: #e0e0e0;
+    background-color: #202020;
+    color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
+    font-size: 1em;
     position: relative;
     bottom: 0;
     width: 100%;
-    font-size: 0.9em;
 }
 
-/* Hover Effects for Links */
-a:hover {
-    color: #4caf50;
-}
-
-/* Animations */
-@keyframes fadeIn {
+/* Scroll Animations */
+@keyframes fadeInUp {
     from {
         opacity: 0;
+        transform: translateY(20px);
     }
     to {
         opacity: 1;
+        transform: translateY(0);
     }
 }
 
-.section {
-    animation: fadeIn 1s ease-in-out;
+/* Section Animations */
+section {
+    animation: fadeInUp 1.5s ease-out;
 }
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
     header .logo {
-        font-size: 2em;
+        font-size: 1.8em;
     }
 
     nav ul {
         flex-direction: column;
-        margin-top: 10px;
+        padding-top: 20px;
     }
 
     nav ul li {
@@ -169,11 +311,11 @@ a:hover {
     }
 
     section {
-        padding: 40px 15px;
+        padding: 60px 15px;
     }
 
     h2 {
-        font-size: 1.7em;
+        font-size: 2.2em;
     }
 
     footer {
