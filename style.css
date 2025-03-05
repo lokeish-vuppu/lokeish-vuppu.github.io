@@ -63,18 +63,27 @@ nav ul li a {
     padding: 10px 20px;
     display: inline-block;
     position: relative;
-    background-color: transparent;
-    border-radius: 12px; /* Rounded corners */
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 /* Hover Effect for Navigation Links */
-nav ul li a:hover {
-    color: #fff;
-    background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 3px;
+    background-color: #4caf50;
+    transition: width 0.3s ease;
 }
 
+nav ul li a:hover {
+    color: #4caf50;
+}
+
+/* Pop-up Animation Effect */
 nav ul li a:hover::before {
     width: 100%;
 }
@@ -83,15 +92,14 @@ nav ul li a:hover {
     animation: popUp 0.5s ease forwards;
 }
 
-/* Rectangular hover effect with rounded corners */
 @keyframes popUp {
     0% {
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
         transform: scale(1);
     }
     100% {
-        box-shadow: 0 0 20px rgba(255, 255, 255, 1);
-        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(76, 175, 80, 1);
+        transform: scale(1.1);
     }
 }
 
@@ -120,6 +128,22 @@ section h2 {
     margin-left: 20px;
 }
 
+/* Education Section */
+#education .education-item {
+    margin-bottom: 20px;
+}
+
+/* Skills Section */
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills li {
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
 #Contact p {
     margin: 10px 0;
 }
@@ -146,41 +170,12 @@ html {
     scroll-behavior: smooth;
 }
 
-/* About, Education, Contact - Center Alignment */
-#about, #education, #contact {
-    text-align: center;
+/* Icons Styling for Contact */
+#Contact i {
+    font-size: 1.3em;
 }
 
-/* Alignment for other sections */
-#experience, #projects, #skills {
-    text-align: left;
-}
-
-/* Experience Section */
-section#experience .job {
-    margin-bottom: 20px;
-}
-
-/* Education Section */
-section#education .education-item {
-    margin-bottom: 20px;
-}
-
-/* Skills Section */
-section#skills ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-section#skills li {
-    margin-bottom: 10px;
-}
-
-/* Contact Section */
-#contact p {
-    font-size: 1.1em;
-}
-
+/* Footer */
 footer {
     background-color: #101010;
     color: #fff;
@@ -188,21 +183,6 @@ footer {
     padding: 10px;
     margin-top: 50px;
     font-size: 0.9em;
-}
-
-/* Icons Styling for Contact */
-#contact i {
-    font-size: 1.3em;
-}
-
-/* Link Styles */
-a {
-    color: #fff;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #f39c12;
 }
 
 /* Responsive Design */
