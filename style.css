@@ -30,8 +30,14 @@ nav a:hover {
     color: #ff6347; /* Color change on hover */
 }
 
+/* Navigation Links Active & Hover Effect */
+nav a.active {
+    color: #00bcd4;
+}
+
 section {
     padding: 40px;
+    transition: max-height 0.5s ease-in-out;
 }
 
 h2 {
@@ -66,12 +72,28 @@ footer {
     color: #fff;
 }
 
-/* Icons */
+/* Collapsible Sections */
+.collapsible-section {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    transition: all 0.5s ease-out;
+}
+
+.collapsible-section.active {
+    max-height: 1000px; /* Adjust according to content height */
+    padding: 20px;
+}
+
+/* Adding Icon to Links */
 a i {
     margin-right: 8px;
 }
 
-/* Additional Styling for Project Section */
+/* Smooth Hover Animation for Projects */
 .project, .job {
     margin-bottom: 20px;
     padding: 20px;
@@ -93,7 +115,6 @@ a i {
     color: #ddd;
 }
 
-/* Skills Section */
 #skills ul {
     list-style-type: none;
     padding: 0;
@@ -105,7 +126,7 @@ a i {
     margin: 10px 0;
 }
 
-/* Responsive Design */
+/* Smooth Transition for Collapsing/Expanding Sections */
 @media (max-width: 768px) {
     nav a {
         font-size: 1em;
