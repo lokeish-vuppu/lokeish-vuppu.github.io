@@ -43,47 +43,30 @@ nav ul li a {
     transition: all 0.3s ease-in-out;
 }
 
-nav ul li a i {
-    margin-right: 8px;
-}
-
 nav ul li a:hover {
     background: rgba(255, 255, 255, 0.2);
 }
 
-/* Sections */
+/* Section Styling */
 .section {
     padding: 50px 20px;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .about-section {
-    background-color: #1a1a1a;
+    text-align: left;
+    padding-left: 20px;
 }
 
-/* Footer */
+.left-aligned {
+    text-align: left;
+    padding-left: 30px;
+}
+
+/* Footer Styling */
 footer {
     text-align: center;
     padding: 20px;
     background: #111;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Contact Icons Styling */
-section#contact i {
-    margin-right: 10px;
-}
-
-section#contact a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-section#contact a:hover {
-    color: #f39c12;
 }
