@@ -1,125 +1,35 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokeish Vuppu | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* Body and General Style */
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #101010;
-    color: #fff;
-    line-height: 1.6;
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden;
-}
+    <!-- Header -->
+    <header>
+        <div class="logo">Lokeish Vuppu</div>
+        <nav>
+            <ul>
+                <li><a href="#about">&#128100; About</a></li> <!-- User Icon -->
+                <li><a href="#experience">&#128188; Experience</a></li> <!-- Briefcase Icon -->
+                <li><a href="#projects">&#128295; Projects</a></li> <!-- Gear Icon -->
+                <li><a href="#education">&#127891; Education</a></li> <!-- Graduation Cap Icon -->
+                <li><a href="#skills">&#128187; Skills</a></li> <!-- Laptop Icon -->
+                <li><a href="#contact">&#128222; Contact</a></li> <!-- Phone Icon -->
+            </ul>
+        </nav>
+    </header>
 
-/* Header */
-header {
-    background-color: #101010;
-    color: #fff;
-    padding: 20px 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    width: 100%;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-}
+    <!-- Content Sections -->
+    <!-- The content sections remain the same -->
+    <!-- Your sections will remain here -->
 
-header .logo {
-    font-size: 2.2em;
-    font-weight: bold;
-    color: #fff;
-    text-align: left;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-left: 20px;
-}
+    <footer>
+        <p>&copy; 2024 Lokeish Vuppu | All Rights Reserved</p>
+    </footer>
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end; /* Align navigation to the right */
-    padding: 15px 20px;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 10px 20px;
-    display: inline-block;
-    position: relative;
-    transition: color 0.3s ease;
-}
-
-nav ul li a::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0%;
-    height: 3px;
-    background-color: #4caf50;
-    transition: width 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #4caf50;
-}
-
-/* Pop-up Animation Effect */
-nav ul li a:hover::before {
-    width: 100%;
-}
-
-nav ul li a:hover {
-    animation: popUp 0.5s ease forwards;
-}
-
-@keyframes popUp {
-    0% {
-        box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
-        transform: scale(1);
-    }
-    100% {
-        box-shadow: 0 0 20px rgba(76, 175, 80, 1);
-        transform: scale(1.1);
-    }
-}
-
-/* Section Styles */
-section {
-    padding-top: 120px; /* Add padding for the fixed header */
-    padding: 100px 20px;
-    transition: all 0.3s ease;
-    animation: fadeInUp 1.5s ease-out;
-}
-
-/* Smooth Scrolling */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Fade-in Animation */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+</body>
+</html>
