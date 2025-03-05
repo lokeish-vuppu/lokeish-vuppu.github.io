@@ -5,7 +5,6 @@ body {
     color: #fff;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
 }
 
 /* Header Styling */
@@ -41,191 +40,50 @@ nav ul li a {
     font-size: 18px;
     padding: 10px 20px;
     border-radius: 8px;
-    display: flex;
-    align-items: center;
     transition: all 0.3s ease-in-out;
 }
 
 nav ul li a i {
-    margin-right: 8px; /* space between icon and text */
+    margin-right: 8px;
 }
 
 nav ul li a:hover {
     background: rgba(255, 255, 255, 0.2);
 }
 
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-    background: #222;
-}
-
-.hero h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 18px;
-}
-
-.btn {
-    background: #f39c12;
-    padding: 10px 20px;
-    border-radius: 5px;
-    color: black;
-    text-decoration: none;
-    margin-top: 20px;
-}
-
-.btn:hover {
-    background: #d35400;
-}
-
-/* Section Styling */
+/* Sections */
 .section {
     padding: 50px 20px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
-/* Job Experience */
-.job {
-    margin-bottom: 30px;
+.about-section {
+    background-color: #1a1a1a;
 }
 
-.job h3 {
-    font-size: 22px;
-    margin-bottom: 5px;
-}
-
-.job ul {
-    list-style: none;
-    padding: 0;
-}
-
-.job ul li {
-    margin: 5px 0;
-}
-
-/* Project Section */
-.project {
-    margin-bottom: 30px;
-}
-
-.project h3 {
-    font-size: 22px;
-    margin-bottom: 5px;
-}
-
-.project ul {
-    list-style: none;
-    padding: 0;
-}
-
-.project ul li {
-    margin: 5px 0;
-}
-
-/* Education Section */
-.education-item {
-    margin-bottom: 30px;
-}
-
-.education-item h3 {
-    font-size: 20px;
-    margin-bottom: 5px;
-}
-
-.education-item .date {
-    font-size: 14px;
-    color: #bbb;
-}
-
-.education-item p {
-    font-size: 16px;
-}
-
-/* Skills Section */
-.skills ul {
-    list-style: none;
-    padding: 0;
-}
-
-.skills ul li {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-/* Contact Section */
-#contact p {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-#contact a {
-    text-decoration: none;
-    color: #f39c12;
-    font-size: 18px;
-}
-
-#contact a:hover {
-    color: #d35400;
-}
-
-/* Footer Styling */
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
     background: #111;
 }
 
-/* Icons Styling */
-.fas, .fab {
-    font-size: 20px;
+footer p {
+    margin: 0;
 }
 
-/* Section Header Styling */
-h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
+/* Contact Icons Styling */
+section#contact i {
+    margin-right: 10px;
 }
 
-/* Additional Styling for About & Professional Summary Sections */
-#about, #professional-summary {
-    font-size: 18px;
+section#contact a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-/* Responsive Design for Mobile */
-@media screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul {
-        display: block;
-        margin-top: 10px;
-    }
-
-    nav ul li {
-        margin-bottom: 10px;
-    }
-
-    .hero h1 {
-        font-size: 28px;
-    }
-
-    .hero p {
-        font-size: 16px;
-    }
-
-    .btn {
-        font-size: 16px;
-    }
-
-    .job, .project, .education-item {
-        text-align: left;
-    }
+section#contact a:hover {
+    color: #f39c12;
 }
