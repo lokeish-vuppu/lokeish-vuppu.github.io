@@ -47,58 +47,43 @@ nav ul li a:hover {
     background: rgba(255, 255, 255, 0.2);
 }
 
-nav ul li a i {
-    margin-right: 8px;
-}
-
 /* Section Styling */
 .section {
     padding: 50px 20px;
+    margin-top: 100px;
     text-align: left;
-    margin-top: 80px;
 }
 
-/* About Section (Centered) */
-#about {
+.about-section {
     text-align: center;
 }
 
-/* Footer Styling */
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
     background: #111;
 }
 
-footer p {
-    margin: 0;
+/* Projects Styling */
+.project {
+    margin-bottom: 30px;
 }
 
-/* Styling for List Items */
-ul {
-    list-style-type: none;
+.project ul {
+    list-style: none;
     padding: 0;
 }
 
-ul li {
-    margin: 5px 0;
+.project li {
+    margin-bottom: 10px;
 }
 
-/* Date Styling */
-.date {
-    font-size: 14px;
-    color: #bbb;
+.job ul {
+    list-style: none;
+    padding: 0;
 }
 
-/* Project and Job Section */
-.project, .job {
-    margin-bottom: 20px;
-}
-
-/* Responsiveness */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
+.job li {
+    margin-bottom: 10px;
 }
