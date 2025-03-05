@@ -1,39 +1,60 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Base Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #000;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
     color: #fff;
 }
 
-header {
+h1, h2, h3 {
+    margin: 0;
+    padding: 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation Styles */
+nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-end;
     padding: 20px;
 }
 
-header .name h1 {
-    font-size: 2.5em;
-}
-
 nav a {
-    color: #fff;
-    margin: 0 20px;
-    font-size: 1.2em;
-    text-decoration: none;
+    padding: 10px;
+    margin: 0 15px;
+    font-size: 18px;
     position: relative;
+    transition: all 0.3s ease;
 }
 
-nav a:hover {
-    color: #f8b400;
-}
-
-nav a::after {
+nav a::before {
     content: "";
     position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+nav a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Hover Effect for Sections */
+section {
+    padding: 20px;
+   
