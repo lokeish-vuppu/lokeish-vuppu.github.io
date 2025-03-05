@@ -43,38 +43,29 @@ nav ul li a {
     transition: all 0.3s ease-in-out;
 }
 
+nav ul li a i {
+    margin-right: 5px;
+}
+
 nav ul li a:hover {
     background: rgba(255, 255, 255, 0.2);
 }
 
-nav ul li a i {
-    margin-right: 8px;
-}
-
-/* Section Styling */
+/* Sections */
 .section {
     padding: 50px 20px;
     text-align: center;
-    margin-top: 70px;
-    border-bottom: 2px solid #f39c12;
+    margin-top: 100px; /* To offset the fixed header */
 }
 
-h2 {
-    font-size: 28px;
-    color: #f39c12;
+#about, #professional-summary {
+    text-align: center;
 }
 
-.job, .project, .education-item {
-    background: #222;
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.job:hover, .project:hover, .education-item:hover {
-    transform: scale(1.05);
-    background: #333;
+/* Left-aligned sections */
+#experience, #projects, #education, #skills, #contact {
+    text-align: left;
+    margin-left: 20%;
 }
 
 /* Footer */
@@ -82,15 +73,4 @@ footer {
     text-align: center;
     padding: 20px;
     background: #111;
-    color: #f39c12;
-}
-
-footer a {
-    color: #f39c12;
-    text-decoration: none;
-}
-
-/* Icon Styling */
-.fas, .fab {
-    color: #f39c12;
 }
