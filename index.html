@@ -3,19 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lokeish Vuppu | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <!-- Header -->
-    <header>
-        <div class="logo">Lokeish Vuppu</div>
-        <nav><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <!-- Adding Font Awesome for Icons -->
@@ -25,21 +12,21 @@
     <header>
         <h1>Lokeish Vuppu</h1>
         <nav>
-            <a href="#about"><i class="fas fa-user"></i> About</a>
-            <a href="#Experience"><i class="fas fa-briefcase"></i> Experience</a>
-            <a href="#projects"><i class="fas fa-cogs"></i> Projects</a>
-            <a href="#Contact"><i class="fas fa-phone-alt"></i> Contact</a>
+            <a href="#about" class="nav-link" data-target="about"><i class="fas fa-user"></i> About</a>
+            <a href="#Experience" class="nav-link" data-target="Experience"><i class="fas fa-briefcase"></i> Experience</a>
+            <a href="#projects" class="nav-link" data-target="projects"><i class="fas fa-cogs"></i> Projects</a>
+            <a href="#skills" class="nav-link" data-target="skills"><i class="fas fa-laptop-code"></i> Skills</a>
+            <a href="#Contact" class="nav-link" data-target="Contact"><i class="fas fa-phone-alt"></i> Contact</a>
         </nav>
     </header>
 
-    <section id="about">
+    <section id="about" class="collapsible-section">
         <h2>PROFESSIONAL SUMMARY</h2>
         <p>I am an IT specialist and software engineer intern with practical experience in process improvement, IT assistance, and software development who is extremely driven and meticulous. Competent in creating technical documentation, working with cross-functional teams, and optimizing business processes.</p>
     </section>
 
-    <section id="Experience">
+    <section id="Experience" class="collapsible-section">
         <h2>WORK EXPERIENCE</h2>
-
         <div class="job">
             <h3>Software Engineer Intern - IT Vertex</h3>
             <span class="date">Aug 2024 – Present</span>
@@ -50,7 +37,6 @@
                 <li>Participated in performance assessments through project presentations, with feedback from supervisors and technical team members for improvement.</li>
             </ul>
         </div>
-
         <div class="job">
             <h3>IT Specialist Intern - Get Adventurous Now Media</h3>
             <span class="date">June 2024 – Oct 2024</span>
@@ -63,9 +49,8 @@
         </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="collapsible-section">
         <h2>Projects</h2>
-
         <div class="project">
             <h3>Smart Pathway Navigator</h3>
             <span class="date">January 2024 – May 2024</span>
@@ -78,7 +63,6 @@
                 <li>For obstacle detection, used ultrasonic sensor for distance measurement and obstacle avoidance.</li>
             </ul>
         </div>
-
         <div class="project">
             <h3>Chess</h3>
             <span class="date">August 2023 – December 2023</span>
@@ -92,9 +76,20 @@
         </div>
     </section>
 
-    <section id="Contact">
+    <section id="skills" class="collapsible-section">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Languages: Python, JavaScript, C, Java</li>
+            <li>Web Development: HTML, CSS, JavaScript, Node.js, React</li>
+            <li>Database Management: MongoDB, MySQL</li>
+            <li>DevOps & Tools: Docker, Git, GitHub, Jenkins, Agile Methodologies</li>
+            <li>Cloud: AWS, Heroku</li>
+        </ul>
+    </section>
+
+    <section id="Contact" class="collapsible-section">
         <h2>Contact Me</h2>
-        <p>Phone: <a href="tel:+15715695126"><i class="fas fa-phone-alt"></i> +1 571 569 5126</a></p>
+        <p>Phone: <a href="tel:+15715695126"><i class="fas fa-mobile-alt"></i> +1 571 569 5126</a></p> <!-- Changed the phone icon here -->
         <p>Email: <a href="mailto:lokeish3@gmail.com"><i class="fas fa-envelope"></i> lokeish3@gmail.com</a></p>
         <p>GitHub: <a href="https://github.com/lokeish-vuppu" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> lokeish-vuppu</a></p>
     </section>
@@ -102,27 +97,7 @@
     <footer>
         <p>&copy; 2024 Lokeish Vuppu. All Rights Reserved.</p>
     </footer>
-</body>
-</html>
 
-            <ul>
-                <li><a href="#about">&#128100; About</a></li> <!-- User Icon -->
-                <li><a href="#experience">&#128188; Experience</a></li> <!-- Briefcase Icon -->
-                <li><a href="#projects">&#128295; Projects</a></li> <!-- Gear Icon -->
-                <li><a href="#education">&#127891; Education</a></li> <!-- Graduation Cap Icon -->
-                <li><a href="#skills">&#128187; Skills</a></li> <!-- Laptop Icon -->
-                <li><a href="#contact">&#128222; Contact</a></li> <!-- Phone Icon -->
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Content Sections -->
-    <!-- The content sections remain the same -->
-    <!-- Your sections will remain here -->
-
-    <footer>
-        <p>&copy; 2024 Lokeish Vuppu | All Rights Reserved</p>
-    </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
