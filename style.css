@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000; /* Jet Black Background */
+    background-color: #000; /* Jet black background */
     color: #fff;
 }
 
@@ -12,40 +12,74 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #111; /* Black header */
+    background-color: #111;
 }
 
 header .name h1 {
     margin: 0;
-    color: #f39c12;
-}
-
-nav {
-    display: flex;
-    gap: 15px;
 }
 
 nav a {
-    position: relative;
     color: #fff;
     text-decoration: none;
+    margin: 0 15px;
     font-size: 18px;
-    padding: 15px;
-    display: inline-block;
-    border-radius: 8px;
-    transition: all 0.3s ease;
+    position: relative;
 }
 
 nav a:hover {
-    color: #f39c12;
-    background-color: #333;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    color: #f39c12; /* Hover color for navigation */
 }
 
-/* Semi-circle glow effect for navigation items */
-nav a::before {
+nav a::after {
     content: '';
     position: absolute;
-    top: -10px;
+    bottom: 0;
     left: 0;
     width: 100%;
+    height: 2px;
+    background-color: #f39c12;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+section h2 {
+    color: #00bcd4; /* Color for section headers */
+}
+
+#Contact p {
+    margin: 10px 0;
+}
+
+#Contact i {
+    color: #f39c12; /* Icon color */
+    margin-right: 10px;
+}
+
+#education, #skills, #certifications {
+    margin-top: 40px;
+}
+
+#education .education-item {
+    margin-bottom: 20px;
+}
+
+#education h3, #skills h2, #certifications h2 {
+    color: #f39c12;
+}
+
+.project, .job {
+    margin-bottom: 20px;
+}
+
+.project h3, .job h3 {
+    color: #f39c12; /* Header color for projects and jobs */
+}
+
+.project ul, .job
