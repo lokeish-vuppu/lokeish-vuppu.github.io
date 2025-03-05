@@ -1,3 +1,83 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Jet black background */
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
+}
+
+header .name h1 {
+    margin: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    position: relative;
+}
+
+nav a:hover {
+    color: #f39c12; /* Hover color for navigation */
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #f39c12;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+section h2 {
+    color: #00bcd4; /* Color for section headers */
+}
+
+#Contact p {
+    margin: 10px 0;
+}
+
+#Contact i {
+    color: #f39c12; /* Icon color */
+    margin-right: 10px;
+}
+
+.project, .job {
+    margin-bottom: 20px;
+}
+
+.project h3, .job h3 {
+    color: #f39c12; /* Header color for projects and jobs */
+}
+
+.project ul, .job ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.project ul li, .job ul li {
+    margin: 5px 0;
+}
 /* General Styles */
 body {
     background-color: #0a0a0a; /* Jet black background */
