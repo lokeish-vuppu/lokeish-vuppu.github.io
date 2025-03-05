@@ -48,7 +48,7 @@ section {
 section:hover {
     background-color: #444;
     transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Adding shadow effect */
 }
 
 h2 {
@@ -95,6 +95,12 @@ a i {
     background-color: #333;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.project:hover, .job:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Added shadow on hover */
 }
 
 .project h3, .job h3 {
@@ -108,7 +114,6 @@ a i {
 
 .project ul li, .job ul li {
     color: #ddd;
-
 }
 
 #skills ul {
