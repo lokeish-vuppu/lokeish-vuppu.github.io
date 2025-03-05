@@ -1,30 +1,72 @@
-#projects {
-    padding: 40px;
-    background-color: #f9f9f9;
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
 }
 
-.project {
-    margin-bottom: 20px;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
 }
 
-.project h3 {
-    font-size: 1.5em;
-    color: #333;
+header .name h1 {
+    margin: 0;
+    color: #f39c12;
 }
 
-.date {
-    display: block;
-    font-size: 1em;
-    color: #666;
-    margin-bottom: 10px;
+nav {
+    display: flex;
+    gap: 15px;
 }
 
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
+nav a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border-radius: 8px;
 }
 
-ul li {
-    font-size: 1.1em;
-    color: #444;
+nav a:hover {
+    color: #f39c12;
+    background-color: #333;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
 }
+
+nav a::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50% 50% 0 0;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-out;
+}
+
+nav a:hover::before {
+    transform: scaleX(1);
+}
+
+/* Section Styles */
+section {
+    padding: 50px 20px;
+    margin: 20px;
+    background-color: #222;
+    border-radius: 8px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s,
