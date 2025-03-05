@@ -7,44 +7,35 @@
 
 /* Body and General Style */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #101010;
-    color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
     line-height: 1.6;
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
 }
 
 /* Header */
 header {
-    background-color: #202020;
-    color: #fff;
+    background-color: #1d1d1d;
     padding: 20px 0;
-    position: fixed;
+    text-align: center;
+    color: #fff;
+    position: sticky;
     top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    width: 100%;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
+    z-index: 10;
 }
 
 header .logo {
-    font-size: 2.2em;
+    font-size: 2.5em;
     font-weight: bold;
-    color: #4caf50;
-    text-align: center;
-    letter-spacing: 2px;
-    text-transform: uppercase;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 nav ul li {
@@ -52,73 +43,140 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #e0e0e0;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #4caf50;
-    transform: translateY(-3px);
+    color: #4caf50; /* Green hover color */
 }
 
-/* Scroll Animations */
 section {
-    padding: 100px 20px;
-    transition: all 0.3s ease;
-    animation: fadeInUp 1.5s ease-out;
+    padding: 60px 20px;
 }
 
-/* Fade-in Animation */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Section Styles */
-section {
-    padding-top: 120px; /* Add padding for the fixed header */
-}
-
-/* About Section */
-#about {
-    background-color: #1a1a1a;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-#about h2 {
-    font-size: 2.5em;
-    color: #4caf50;
+h2 {
+    font-size: 2em;
     text-align: center;
     margin-bottom: 20px;
-}
-
-#about p {
-    font-size: 1.1em;
-    color: #ccc;
-    text-align: center;
-    line-height: 1.8;
-}
-
-/* Other Sections... */
-
-/* Footer */
-footer {
-    background-color: #202020;
     color: #fff;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #e0e0e0;
+}
+
+/* Section Specific Styles */
+.about-section {
+    background-color: #1d1d1d;
+    color: #e0e0e0;
+}
+
+.job ul, .project ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.job li, .project li {
+    margin: 10px 0;
+}
+
+/* Education and Skills Section */
+.education-item {
+    background-color: #1d1d1d;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.education-item:hover {
+    background-color: #333;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+/* Skills Section */
+ul li {
+    margin: 10px 0;
+}
+
+/* Contact Section */
+section#contact p {
+    font-size: 1.2em;
     text-align: center;
-    padding: 20px;
-    font-size: 1em;
+    margin: 10px 0;
+}
+
+section#contact a {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+section#contact a:hover {
+    color: #4caf50;
+}
+
+footer {
+    background-color: #1d1d1d;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 10px;
     position: relative;
     bottom: 0;
     width: 100%;
+    font-size: 0.9em;
+}
+
+/* Hover Effects for Links */
+a:hover {
+    color: #4caf50;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.section {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    header .logo {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+
+    h2 {
+        font-size: 1.7em;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
 }
