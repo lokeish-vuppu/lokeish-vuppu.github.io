@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Add Font Awesome for icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Lokeish Vuppu</h1>
+        <div class="name">
+            <h1>Lokeish Vuppu</h1>
+        </div>
         <nav>
-            <a href="#about">About</a>
-            <a href="#Experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#Contact">Contact</a>
+            <a href="#about"><i class="fas fa-user"></i> About</a>
+            <a href="#Experience"><i class="fas fa-briefcase"></i> Experience</a>
+            <a href="#projects"><i class="fas fa-code"></i> Projects</a>
+            <a href="#Contact"><i class="fas fa-envelope"></i> Contact</a>
         </nav>
     </header>
 
@@ -26,7 +28,6 @@
 
     <section id="Experience">
         <h2>WORK EXPERIENCE</h2>
-
         <div class="job">
             <h3>Software Engineer Intern - IT Vertex</h3>
             <span class="date">Aug 2024 – Present</span>
@@ -37,7 +38,6 @@
                 <li>Participated in performance assessments through project presentations, with feedback from supervisors and technical team members for improvement.</li>
             </ul>
         </div>
-
         <div class="job">
             <h3>IT Specialist Intern - Get Adventurous Now Media</h3>
             <span class="date">June 2024 – Oct 2024</span>
@@ -51,19 +51,23 @@
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
+        <h2>PROJECTS</h2>
 
+        <!-- Smart Pathway Navigator -->
         <div class="project">
             <h3>Smart Pathway Navigator</h3>
             <span class="date">January 2024 – May 2024</span>
             <ul>
                 <li>Developed an autonomous two-wheeled robotic assistant designed to maneuver, track paths, avoid collisions by detecting obstacles and follow orders according to specific voice commands.</li>
                 <li>Implemented in Python for programming and C for instructing the Beaglebone on DebianOS.</li>
-                <li>Engineered to intelligently adapt and improve day-to-day activities by enhancing the efficiency and safety of delivery services.</li>
-                <li>Implemented threads for obstacle avoidance, real-time audio processing, and synchronization.</li>
+                <li>Robot is engineered to intelligently adapt and improve day-to-day activities by enhancing the efficiency and safety of delivery services, contributing to the evolution of self-driving vehicle technologies.</li>
+                <li>Implemented threads include obstacle avoidance, real-time audio processing, monitoring, and synchronization.</li>
+                <li>For Audio Processing, used a Python Process for voice commands, microphone sensor interface, and audio command processing using naive NLP.</li>
+                <li>For obstacle detection, used ultrasonic sensor for distance measurement and obstacle avoidance.</li>
             </ul>
         </div>
 
+        <!-- Chess -->
         <div class="project">
             <h3>Chess</h3>
             <span class="date">August 2023 – December 2023</span>
@@ -72,27 +76,18 @@
                 <li>Implemented the MVC design model to develop the application.</li>
                 <li>Used MongoDB to store player stats and account details.</li>
                 <li>Designed the application with Express, Node, and React frameworks in JavaScript.</li>
-            </ul>
-        </div>
-
-        <div class="project">
-            <h3>Crop Yield Prediction</h3>
-            <span class="date">March 2022 – May 2022</span>
-            <ul>
-                <li>Designed a machine learning model using Keras to predict crop yield in Indian agriculture.</li>
-                <li>Analyzed historical yield patterns of different crops in various harvest seasons.</li>
+                <li>Integrated OpenSSL certificate for end-to-end encryption of the application.</li>
             </ul>
         </div>
     </section>
 
     <section id="Contact">
-    <h2>Contact Me</h2>
-    <p><i class="fas fa-phone-alt"></i> <a href="tel:+15715695126">+1 571 569 5126</a></p>
-    <p><i class="fas fa-envelope"></i> <a href="mailto:lokeish3@gmail.com">lokeish3@gmail.com</a></p>
-    <p><i class="fab fa-github"></i> <a href="https://github.com/lokeish-vuppu" target="_blank" rel="noopener noreferrer">lokeish-vuppu</a></p>
-    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/lokeish-vuppu-b231271b0/" target="_blank" rel="noopener noreferrer">Lokeish Vuppu</a></p>
-</section>
-
+        <h2>Contact Me</h2>
+        <p><i class="fas fa-phone-alt"></i> <a href="tel:+15715695126">+1 571 569 5126</a></p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:lokeish3@gmail.com">lokeish3@gmail.com</a></p>
+        <p><i class="fab fa-github"></i> <a href="https://github.com/lokeish-vuppu" target="_blank" rel="noopener noreferrer">lokeish-vuppu</a></p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/lokeish-vuppu-b231271b0/" target="_blank" rel="noopener noreferrer">Lokeish Vuppu</a></p>
+    </section>
 
     <footer>
         <p>&copy; 2024 Lokeish Vuppu. All Rights Reserved.</p>
