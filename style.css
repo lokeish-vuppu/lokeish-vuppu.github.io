@@ -1,126 +1,107 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body and General Style */
+/* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #101010;
-    color: #f0f0f0;
-    line-height: 1.6;
-    padding: 0;
+    background-color: #1a1a1a; /* Black background */
+    color: #f1f1f1; /* Light text color */
+    font-family: Arial, sans-serif;
     margin: 0;
-    overflow-x: hidden;
+    padding: 0;
 }
 
-/* Header */
 header {
-    background-color: #202020;
-    color: #fff;
-    padding: 20px 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    width: 100%;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-}
-
-header .logo {
-    font-size: 2.2em;
-    font-weight: bold;
-    color: #4caf50;
-    text-align: center;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 15px 0;
-}
-
-nav ul li {
-    margin: 0 20px;
-    position: relative;
-}
-
-nav ul li a {
-    color: #e0e0e0;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: color 0.3s ease, transform 0.3s ease;
-    display: inline-block;
-    padding: 10px 0;
-}
-
-/* Remove underline from navigation items */
-nav ul li a::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0%;
-    height: 3px;
-    background-color: transparent;
-    transition: width 0.3s ease;
-}
-
-/* Hover Effect: White Line on Bottom */
-nav ul li a:hover {
-    color: #4caf50;
-    transform: translateY(-3px);
-}
-
-nav ul li a:hover::after {
-    width: 100%;
-    background-color: white; /* White line on hover */
-}
-
-/* Scroll Animations */
-section {
-    padding: 100px 20px;
-    transition: all 0.3s ease;
-    animation: fadeInUp 1.5s ease-out;
-}
-
-/* Smooth Scrolling */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Fade-in Animation */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Section Styles */
-section {
-    padding-top: 120px; /* Add padding for the fixed header */
-    padding: 100px 20px;
-    min-height: 100vh; /* Ensure sections take up full height */
-}
-
-/* Footer */
-footer {
-    background-color: #101010;
-    color: #fff;
+    background-color: #333; /* Dark grey background for the header */
     padding: 20px;
     text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #fff;
+    margin: 0;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    color: #ff6347; /* Color change on hover */
+}
+
+section {
+    padding: 40px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #ff6347; /* Tomato color for section titles */
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+ul li {
+    font-size: 1.1em;
+    color: #ddd;
+}
+
+a {
+    color: #00bcd4; /* Cyan color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff6347; /* Hover color */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Icons */
+a i {
+    margin-right: 8px;
+}
+
+/* Additional Styling for Project Section */
+.project {
+    margin-bottom: 20px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.job, .project {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.date {
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+@media (max-width: 768px) {
+    nav a {
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    section {
+        padding: 20px;
+    }
 }
