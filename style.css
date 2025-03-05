@@ -1,42 +1,30 @@
-/* Global Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #000; /* Jet black background */
-    color: #fff;
+#projects {
+    padding: 40px;
+    background-color: #f9f9f9;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #111;
+.project {
+    margin-bottom: 20px;
 }
 
-header .name h1 {
-    margin: 0;
+.project h3 {
+    font-size: 1.5em;
+    color: #333;
 }
 
-nav {
-    display: flex;
-    gap: 15px;
+.date {
+    display: block;
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
 }
 
-nav a {
-    position: relative;
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 15px;
-    display: inline-block;
-    transition: all 0.3s ease;
-    border-radius: 8px;
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
 }
 
-/* Navigation hover effect */
-nav a:hover {
-    color: #f39c12;
-    background-color: #333; /* Background for hover */
-    box-shadow: 0px 10px 20px rgba(0,
+ul li {
+    font-size: 1.1em;
+    color: #444;
+}
