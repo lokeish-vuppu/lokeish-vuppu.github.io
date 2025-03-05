@@ -28,31 +28,7 @@ nav {
     padding: 20px;
 }
 
-nav a {
-    padding: 10px;
-    margin: 0 15px;
-    font-size: 18px;
-    position: relative;
-    transition: all 0.3s ease;
-}
 
-nav a::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 5px;
-    background-color: #fff;
-    top: 0;
-    left: 0;
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-
-nav a:hover::before {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
 /* Navigation hover effect */
 nav a:hover {
     color: #f39c12;
@@ -77,6 +53,13 @@ nav a::after {
 nav a:hover::after {
     opacity: 1;
     transform: translateX(-50%) scaleX(1.1);
+}
+
+}
+
+nav a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 section h2 {
