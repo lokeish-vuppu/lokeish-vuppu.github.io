@@ -1,151 +1,60 @@
-/* General Styles */
+/* Base Styles */
 body {
-    background-color: #0a0a0a; /* Pure jet black background */
-    color: #f1f1f1; /* Light text color */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-header {
-    background-color: #1d1d1d; /* Darker header background color */
-    padding: 20px;
-    text-align: center;
-}
-
-h1 {
-    font-size: 3em;
-    color: #ff6347; /* Changed header text color to Tomato */
-    margin: 0;
-}
-
-nav a {
+    background-color: #000000;
     color: #fff;
-    margin: 0 20px;
-    text-decoration: none;
-    font-size: 1.2em;
 }
 
-nav a:hover {
-    color: #ff6347; /* Hover color for nav links */
-}
-
-/* Navigation Links Active & Hover Effect */
-nav a.active {
-    color: #00bcd4;
-}
-
-section {
-    padding: 40px;
-    transition: max-height 0.5s ease-in-out;
-    cursor: pointer;
-}
-
-/* Hover Effects for Content Sections */
-section:hover {
-    background-color: #333;
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-h2 {
-    font-size: 2.5em;
-    color: #ff6347; /* Tomato color for section titles */
-    margin-bottom: 20px;
-}
-
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
-}
-
-ul li {
-    font-size: 1.1em;
-    color: #ddd;
+h1, h2, h3 {
+    margin: 0;
+    padding: 10px;
 }
 
 a {
-    color: #00bcd4; /* Cyan color for links */
+    color: #fff;
     text-decoration: none;
 }
 
 a:hover {
-    color: #ff6347; /* Hover color */
+    text-decoration: underline;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-}
-
-/* Collapsible Sections */
-.collapsible-section {
-    max-height: 0;
-    overflow: hidden;
-    background-color: #333;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    padding: 0 20px;
-    transition: all 0.5s ease-out;
-}
-
-.collapsible-section.active {
-    max-height: 1000px; /* Adjust according to content height */
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: flex-end;
     padding: 20px;
 }
 
-/* Adding Icon to Links */
-a i {
-    margin-right: 8px;
+nav a {
+    padding: 10px;
+    margin: 0 15px;
+    font-size: 18px;
+    position: relative;
+    transition: all 0.3s ease;
 }
 
-/* Smooth Hover Animation for Projects */
-.project, .job {
-    margin-bottom: 20px;
+nav a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+nav a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Hover Effect for Sections */
+section {
     padding: 20px;
-    background-color: #333;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.project h3, .job h3 {
-    color: #fff;
-}
-
-.project span, .job span {
-    color: #aaa;
-    font-size: 0.9em;
-}
-
-.project ul li, .job ul li {
-    color: #ddd;
-
-}
-
-#skills ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#skills ul li {
-    font-size: 1.2em;
-    color: #ddd;
-    margin: 10px 0;
-}
-
-/* Smooth Transition for Collapsing/Expanding Sections */
-@media (max-width: 768px) {
-    nav a {
-        font-size: 1em;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    section {
-        padding: 20px;
-    }
-}
+   
