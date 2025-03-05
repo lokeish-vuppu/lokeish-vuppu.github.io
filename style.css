@@ -1,55 +1,83 @@
-/* Global Styles */
+v/* Base Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000; /* Jet black background */
+    background-color: #000000;
     color: #fff;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #111;
+h1, h2, h3 {
+    margin: 0;
+    padding: 10px;
 }
 
-header .name h1 {
-    margin: 0;
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
 }
 
 nav a {
-    color: #fff;
-    text-decoration: none;
+    padding: 10px;
     margin: 0 15px;
     font-size: 18px;
     position: relative;
+    transition: all 0.3s ease;
 }
 
+nav a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+nav a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+/* Navigation hover effect */
 nav a:hover {
-    color: #f39c12; /* Hover color for navigation */
+    color: #f39c12;
+    background-color: #333; /* Background for hover */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+nav a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    transform: translateX(-50%);
+    border-radius: 50% 50% 0 0;
+    opacity: 0;
+    transition: all 0.3s ease;
 }
 
-nav {
-    display: flex;
-    overflow-x: auto; /* Allow horizontal scrolling on small screens */
-    white-space: nowrap;
+nav a:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) scaleX(1.1);
 }
-
-nav a {
-    padding: 15px;
-    font-size: 18px;
-    margin: 0 10px;
-    color: #fff;
-    text-decoration: none;
 
 section h2 {
     color: #00bcd4; /* Color for section headers */
@@ -84,4 +112,18 @@ section h2 {
     color: #f39c12; /* Header color for projects and jobs */
 }
 
-.project ul, .job
+.project ul, .job ul {
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: #fff;
+}
+
+/* Hover Effect for Sections */
+section {
+    padding: 20px;
+   
