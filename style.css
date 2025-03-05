@@ -1,85 +1,86 @@
-/* Global Styles */
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
     margin: 0;
     padding: 0;
-    background-color: #000; /* Jet black background */
-    color: #fff;
 }
 
+/* Header Styling */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: #111;
     padding: 20px;
-    background-color: #111;
-}
-
-header .name h1 {
-    margin: 0;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-    position: relative;
-}
-
-nav a:hover {
-    color: #f39c12; /* Hover color for navigation */
-}
-
-nav a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    position: fixed;
     width: 100%;
-    height: 2px;
-    background-color: #f39c12;
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+    top: 0;
+    z-index: 1000;
 }
 
-nav a:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+.logo {
+    font-size: 24px;
+    font-weight: bold;
 }
 
-section h2 {
-    color: #00bcd4; /* Color for section headers */
+nav ul {
+    list-style: none;
+    display: flex;
 }
 
-#Contact p {
-    margin: 10px 0;
+nav ul li {
+    margin: 0 15px;
 }
 
-#Contact i {
-    color: #f39c12; /* Icon color */
-    margin-right: 10px;
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
 }
 
-#education, #skills, #certifications {
-    margin-top: 40px;
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
 }
 
-#education .education-item {
-    margin-bottom: 20px;
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #222;
 }
 
-#education h3, #skills h2, #certifications h2 {
-    color: #f39c12;
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 
-.project, .job {
-    margin-bottom: 20px;
+.btn {
+    background: #f39c12;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
 }
 
-.project h3, .job h3 {
-    color: #f39c12; /* Header color for projects and jobs */
+.btn:hover {
+    background: #d35400;
 }
 
-.project ul, .job
+/* Sections */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+}
