@@ -1,7 +1,6 @@
 /* Global Styles */
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px; /* Adjusts scroll position for fixed header */
 }
 
 body {
@@ -63,12 +62,6 @@ nav a::after {
 nav a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
-}
-
-/* Adjust Sections for Fixed Header */
-section {
-    padding-top: 60px; /* Ensures proper spacing */
-    margin-top: -60px; /* Counteracts the extra spacing from padding */
 }
 
 /* Main Heading (h2) - Yellow */
