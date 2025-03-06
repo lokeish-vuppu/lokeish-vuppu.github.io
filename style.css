@@ -49,8 +49,9 @@ nav a:hover::after {
     transform-origin: bottom left;
 }
 
-section h2 {
-    color: #00bcd4; /* Color for section headers */
+/* Make all headings blue */
+h2, h3 {
+    color: #007bff; /* Blue color for all headings */
 }
 
 #Contact p {
@@ -70,16 +71,11 @@ section h2 {
     margin-bottom: 20px;
 }
 
-#education h3, #skills h2, #certifications h2 {
-    color: #f39c12;
-}
-
 .project, .job {
     margin-bottom: 20px;
 }
 
-.project h3, .job h3 {
-    color: #f39c12; /* Header color for projects and jobs */
+.project ul, .job ul {
+    list-style: none;
+    padding: 0;
 }
-
-.project ul, .job
