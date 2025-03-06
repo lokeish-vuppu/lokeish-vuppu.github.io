@@ -49,9 +49,14 @@ nav a:hover::after {
     transform-origin: bottom left;
 }
 
-/* Make all headings blue */
-h2, h3 {
-    color: #007bff; /* Blue color for all headings */
+/* Main Heading (h2) - Yellow */
+h2 {
+    color: #f39c12; /* Yellow color for main headings */
+}
+
+/* Subheadings (h3) - Blue */
+h3 {
+    color: #007bff; /* Blue color for subheadings */
 }
 
 #Contact p {
