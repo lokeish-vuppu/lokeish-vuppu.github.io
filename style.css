@@ -1,6 +1,7 @@
 /* Global Styles */
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 90px; /* Adjusts scroll position for fixed header */
 }
 
 body {
@@ -27,6 +28,14 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
 }
 
+/* Ensure Last Nav Item Has Enough Space */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-right: 20px; /* Extra space on the right */
+}
+
 /* Header Name */
 header .name h1 {
     margin: 0;
@@ -39,6 +48,7 @@ nav a {
     margin: 0 15px;
     font-size: 18px;
     position: relative;
+    white-space: nowrap; /* Prevents text from wrapping */
 }
 
 nav a:hover {
@@ -49,7 +59,7 @@ nav a:hover {
 nav a::after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -2px;
     left: 0;
     width: 100%;
     height: 2px;
@@ -62,6 +72,11 @@ nav a::after {
 nav a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+/* Fix Content Position for Accurate Navigation */
+section {
+    scroll-margin-top: 90px; /* Ensures correct positioning when navigating */
 }
 
 /* Main Heading (h2) - Yellow */
