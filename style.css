@@ -5,10 +5,10 @@ html {
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif; /* Updated font */
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Subtle background color */
+    background-color: #f8f8f8; /* Subtle background color */
     color: #333; /* Dark text color */
     line-height: 1.6;
 }
@@ -186,3 +186,13 @@ footer p {
     font-size: 14px;
     color: #fff; /* White footer text */
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    nav a {
+        margin: 0 10px;
+        font-size: 14
