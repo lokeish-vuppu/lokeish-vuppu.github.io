@@ -21,16 +21,19 @@ body {
 
 /* Fixed Header */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0; 
     background-color: #111; 
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Added padding to header container */
 }
 
 /* Header Name */
@@ -47,6 +50,7 @@ nav a {
     font-size: 16px; 
     position: relative;
     transition: color 0.3s ease; 
+    white-space: nowrap; /* Prevent wrapping */
 }
 
 nav a:hover {
@@ -65,6 +69,10 @@ h2 {
 }
 
 /* About Section */
+.about-container {
+    padding: 60px 20px; /* Added padding to the about container */
+}
+
 #about p {
     text-align: justify; 
 }
