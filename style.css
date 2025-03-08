@@ -44,8 +44,8 @@ header .name h1 {
 
 /* Navigation Links */
 nav {
-    display: flex; /* Ensure navigation items are in a row */
-    align-items: center;
+    display: flex;
+    align-items: center; /* Vertically align navigation items */
 }
 
 nav a {
@@ -74,6 +74,10 @@ h2 {
 }
 
 /* About Section */
+#about {
+    padding-top: 80px; /* Add more top padding to about section */
+}
+
 #about p {
     text-align: justify;
 }
