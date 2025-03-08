@@ -3,34 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Lokeish Vuppu's Portfolio</title> 
     <link rel="stylesheet" href="style.css">
-    <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="name">
-            <h1>Lokeish Vuppu</h1>
+        <div class="container"> 
+            <div class="name">
+                <h1>Lokeish Vuppu</h1>
+            </div>
+            <nav>
+                <a href="#about"><i class="fas fa-user"></i> About</a>
+                <a href="#Experience"><i class="fas fa-briefcase"></i> Experience</a>
+                <a href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
+                <a href="#projects"><i class="fas fa-code"></i> Projects</a>
+                <a href="#skills"><i class="fas fa-cogs"></i> Skills</a>
+                <a href="#certifications"><i class="fas fa-certificate"></i> Certifications</a>
+                <a href="#publications"><i class="fas fa-file-alt"></i> Publications</a>
+                <a href="#Contact"><i class="fas fa-envelope"></i> Contact</a>
+            </nav>
         </div>
-        <nav>
-            <a href="#about"><i class="fas fa-user"></i> About</a>
-            <a href="#Experience"><i class="fas fa-briefcase"></i> Experience</a>
-            <a href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
-            <a href="#projects"><i class="fas fa-code"></i> Projects</a>
-            <a href="#skills"><i class="fas fa-cogs"></i> Skills</a>
-            <a href="#certifications"><i class="fas fa-certificate"></i> Certifications</a>
-            <a href="#publications"><i class="fas fa-file-alt"></i> Publications</a>
-            <a href="#Contact"><i class="fas fa-envelope"></i> Contact</a>
-        </nav>
     </header>
 
-    <section id="about">
+    <section id="about" class="container"> 
         <h2>ABOUT ME</h2>
-        <p>I am an IT specialist and software engineer intern with practical experience in process improvement, IT assistance, and software development who is extremely driven and meticulous. Competent in creating technical documentation, working with cross-functional teams, and optimizing business processes.</p>
+        <p>I am an IT specialist and software engineer intern with practical experience in process improvement, IT assistance, and software development who is extremely driven and meticulous. Competent in creating technical documentation, working with cross-functional teams, and optimizing business processes.  I am passionate about using technology to solve real-world problems and am always eager to learn new skills and technologies.</p> 
     </section>
 
-    <section id="Experience">
+    <section id="Experience" class="container">
         <h2>WORK EXPERIENCE</h2>
         <div class="job">
             <h3>Software Engineer Intern - IT Vertex</h3>
@@ -54,8 +55,7 @@
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education">
+    <section id="education" class="container">
         <h2>EDUCATION</h2>
         <div class="education-item">
             <h3>George Mason University, Fairfax, VA - United States</h3>
@@ -69,10 +69,8 @@
         </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="container">
         <h2>PROJECTS</h2>
-
-        <!-- Smart Pathway Navigator -->
         <div class="project">
             <h3>Smart Pathway Navigator</h3>
             <span class="date">January 2024 – May 2024</span>
@@ -85,8 +83,6 @@
                 <li>For obstacle detection, used ultrasonic sensor for distance measurement and obstacle avoidance.</li>
             </ul>
         </div>
-
-        <!-- Chess -->
         <div class="project">
             <h3>Chess</h3>
             <span class="date">August 2023 – December 2023</span>
@@ -98,9 +94,7 @@
                 <li>Integrated OpenSSL certificate for end-to-end encryption of the application.</li>
             </ul>
         </div>
-
-        <!-- Crop Yield Prediction -->
-<div class="project">
+        <div class="project">
             <h3>Crop Yield Prediction In Indian Agriculture</h3>
             <span class="date">March 2022 – May 2022</span>
             <ul>
@@ -108,12 +102,11 @@
                 <li>Analyzed historical yield patterns of different crop types in different harvest seasons and the conditions they depend on. </li>
                 <li>Performed data preprocessing on a largely noisy dataset. .</li>
                 <li>Presented the project to a panel of professors for final review. </li>
-                
             </ul>
         </div>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="container">
         <h2>SKILLS & KNOWLEDGE</h2>
         <ul>
             <li><strong>Languages:</strong> Python, Java, C, SQL, HTML, CSS, Javascript</li>
@@ -124,7 +117,7 @@
         </ul>
     </section>
 
-    <section id="certifications">
+    <section id="certifications" class="container">
         <h2>CERTIFICATIONS</h2>
         <ul>
             <li>PCAP – Programming Essentials in Python</li>
@@ -133,36 +126,35 @@
         </ul>
     </section>
 
-    
-<section id="publications">
-    <h2>Publications & Documents</h2>
-    <ul>
-        <li>
-            <h3>Crop Yield Prediction in Indian Agriculture Using Machine
+    <section id="publications" class="container">
+        <h2>Publications & Documents</h2>
+        <ul>
+            <li>
+                <h3>Crop Yield Prediction in Indian Agriculture Using Machine Learning</h3>
+                <p><strong>Authors:</strong> Dr. Mallikarjuna Rao Cherukupalli, Lokeish Sae Ram Vuppu, Ritwik Goli, Tarun Reddy Talakanti, Shyam Kumar Medikonda </p>
+                <p><strong>Published in: ICICIAC </strong> 2022</p>
+                <p><a href="https://drive.google.com/file/d/1buux3DMa9hdCU2SeAYnK1GCCeq9AtcL_/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Paper</a></p>
+            </li>
+            <li>
+                <h3>GetAdventurousNowMedia Recommendation Letter</h3>
+                <span class="date">June 2024 – Oct 2024</span>
+                <p><a href="https://drive.google.com/file/d/1TjLtEhkMkzMaBG0noYwvUOlWhKBjZOIv/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Letter</a></p>
+            </li>
+        </ul>
+    </section>
 
-Learning</h3>
-            <p><strong>Authors:</strong> Dr. Mallikarjuna Rao Cherukupalli, Lokeish Sae Ram Vuppu, Ritwik Goli, Tarun Reddy Talakanti, Shyam Kumar Medikonda </p>
-            <p><strong>Published in: ICICIAC </strong> 2022</p>
-            <p><a href="https://drive.google.com/file/d/1buux3DMa9hdCU2SeAYnK1GCCeq9AtcL_/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Paper</a></p>
-        </li>
-        <li>
-            <h3>GetAdventurousNowMedia Recommendation Letter</h3>
-            <span class="date">June 2024 – Oct 2024</span>
-            <p><a href="https://drive.google.com/file/d/1TjLtEhkMkzMaBG0noYwvUOlWhKBjZOIv/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Letter</a></p>
-        </li>
-</ul>
-</section>
-    
-    <section id="Contact">
+    <section id="Contact" class="container">
         <h2>Contact</h2>
-        <p><i class="fas fa-phone-alt"></i> <a href="tel:+15715695126">Phone</a></p>
-        <p><i class="fas fa-envelope"></i> <a href="mailto:lokeish3@gmail.com">Gmail</a></p>
+        <p><i class="fas fa-phone-alt"></i> <a href="tel:+15715695126">+1 (571) 569-5126</a></p> 
+        <p><i class="fas fa-envelope"></i> <a href="mailto:lokeish3@gmail.com">lokeish3@gmail.com</a></p> 
         <p><i class="fab fa-github"></i> <a href="https://github.com/lokeish-vuppu" target="_blank" rel="noopener noreferrer">GitHub</a></p>
         <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/lokeish-vuppu-b231271b0/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
     </section>
 
     <footer>
-        <p>&copy; 2025 Lokeish's Portfolio | All Rights Reserved.</p>
+        <div class="container">
+            <p>&copy; 2025 Lokeish Vuppu | All Rights Reserved.</p> 
+        </div>
     </footer>
 </body>
 </html>
