@@ -151,6 +151,15 @@ h2 {
     padding-left: 40px;
 }
 
+/* Certifications Section - Updated */
+#certifications li {
+    margin-bottom: 20px; /* Add space between certifications */
+}
+
+#certifications h3 {
+    margin-bottom: 5px; /* Add space between title and details */
+}
+
 /* Contact Section */
 #Contact p {
     margin: 10px 0;
@@ -195,4 +204,10 @@ footer p {
 
     nav a {
         margin: 0 10px;
-        font-size: 14
+        font-size: 14px;
+    }
+
+    #skills ul {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
