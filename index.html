@@ -1,464 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lokeish Vuppu — Portfolio</title>
-  <meta name="description" content="Lokeish Vuppu — Software Engineer | IT Specialist. MS Computer Science. Seeking SDE/Cloud/Embedded roles." />
-
-  <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Header -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="#hero" class="logo">Lokeish Vuppu</a>
 
-      <nav class="main-nav" id="mainNav" aria-label="Primary Navigation">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#certifications">Certs</a>
-        <a href="#publications">Publications</a>
-        <a href="#contact">Contact</a>
-      </nav>
-
-      <div class="cta">
-        <a class="btn resume-link" href="resume.pdf" download>Download Resume</a>
-      </div>
-
-      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
+  <!-- ===== NAVIGATION ===== -->
+  <header>
+    <nav class="container nav-bar">
+      <h1 class="logo">Lokeish Vuppu</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certs">Certs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="resume.pdf" class="resume-link" target="_blank">Download Resume</a>
+    </nav>
   </header>
 
-  <!-- HERO -->
-  <section id="hero" class="hero-section">
-    <div class="hero-overlay" aria-hidden="true"></div>
-
-    <div class="container hero-inner">
-      <div class="hero-left">
-        <p class="hello">HELLO — I'M</p>
-        <h1 class="hero-name">Lokeish Vuppu</h1>
-        <p class="hero-role" id="typed" aria-live="polite"></p>
-
-        <div class="hero-actions">
-          <a class="btn primary" href="mailto:lokeish3@gmail.com">Hire me — Email</a>
-          <a class="btn outline" href="#projects">See Projects</a>
-        </div>
-
-        <ul class="hero-links" aria-hidden="false">
-          <li><a href="https://github.com/lokeish-vuppu" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/lokeish-vuppu-b231271b0/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
-        </ul>
+  <!-- ===== HERO SECTION ===== -->
+  <section id="hero" class="container">
+    <div class="hero-content">
+      <h2 class="hero-name">Lokeish Vuppu</h2>
+      <p class="hero-title"></p>
+      <div class="hero-buttons">
+        <a href="mailto:lokeish3@gmail.com" class="btn hire">Hire me — Email</a>
+        <a href="#projects" class="btn projects">See Projects</a>
       </div>
-
-      <aside class="hero-right" aria-label="Profile summary">
-        <div class="profile-card">
-          <div class="profile-pic" role="img" aria-label="Profile picture"></div>
-          <div class="profile-info">
-            <h3>Lokeish Vuppu</h3>
-            <p class="small">MS Computer Science — George Mason University</p>
-            <p class="small muted">Software Engineer | Embedded Systems | Cloud</p>
-            <a class="btn small" href="resume.pdf" download>Resume (PDF)</a>
-          </div>
-        </div>
-      </aside>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="section container reveal">
-    <div class="split">
-      <div>
-        <h2>About Me</h2>
-        <p>I am an IT specialist and software engineer with practical experience in process improvement, IT assistance, and software development. I create technical documentation, collaborate with cross-functional teams, and optimize business processes. I enjoy solving real-world problems with maintainable code and learning new technologies.</p>
-        <p><strong>Job-seeker focus:</strong> actively seeking roles in software engineering, cloud engineering, or embedded systems/robotics.</p>
-
-        <div class="quick-info">
-          <span><strong>Location:</strong> Fairfax, VA</span>
-          <span><strong>Open to:</strong> Full-time / Contract / Remote</span>
-        </div>
-
-        <div class="hero-actions mt-12">
-          <a class="btn primary" href="mailto:lokeish3@gmail.com">Contact Me</a>
-          <a class="btn outline" href="#projects">View Work</a>
-        </div>
-      </div>
-
-      <div>
-        <div class="about-stats" aria-hidden="true">
-          <div class="stat">
-            <h3>2+</h3>
-            <p>Years Experience</p>
-          </div>
-          <div class="stat">
-            <h3>10+</h3>
-            <p>Projects & Research</p>
-          </div>
-          <div class="stat">
-            <h3>15+</h3>
-            <p>Certifications</p>
-          </div>
-        </div>
+      <div class="hero-icons">
+        <a href="mailto:lokeish3@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/lokeish-vuppu" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/lokeish-vuppu-b231271b0/" target="_blank"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
-  </section>
 
-  <!-- EXPERIENCE -->
-  <section id="experience" class="section container reveal">
-    <h2>Work Experience</h2>
-
-    <div class="timeline">
-      <article class="timeline-item">
-        <h3>Software Engineer Intern</h3>
-        <p class="meta">IT Vertex — Aug 2024 – Present</p>
-        <ul>
-          <li>Built an internal communication app tailored for in-house IT projects.</li>
-          <li>Created technical documentation to ensure clarity and maintainability.</li>
-          <li>Collaborated with teams to identify requirements and iterate on features.</li>
-          <li>Presented project demos and integrated feedback from supervisors.</li>
-        </ul>
-      </article>
-
-      <article class="timeline-item">
-        <h3>IT Specialist Intern</h3>
-        <p class="meta">Get Adventurous Now Media — Jun 2024 – Oct 2024</p>
-        <ul>
-          <li>Authored ClickUp instruction sheet with screenshots and business case.</li>
-          <li>Created presentations on Cybersecurity and Web-hosting.</li>
-          <li>Researched Outlook workflow improvements and Zapier integrations.</li>
-          <li>Proposed solutions for email-ID reduction and list integrations.</li>
-        </ul>
-      </article>
+    <div class="hero-card">
+      <h3>Lokeish Vuppu</h3>
+      <p>MS Computer Science — George Mason University</p>
+      <p>Software Engineer | Embedded Systems | Cloud</p>
+      <a href="resume.pdf" target="_blank" class="resume-btn">Resume (PDF)</a>
     </div>
   </section>
 
-  <!-- EDUCATION -->
-  <section id="education" class="section container reveal">
-    <h2>Education</h2>
-    <div class="education-item">
-      <h3>George Mason University, Fairfax, VA - United States</h3>
-      <span class="date">May 2024</span>
-      <p><strong>Master of Science, Computer Science</strong></p>
-    </div>
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="container section">
+    <h2>About Me</h2>
+    <p>
+      Passionate IT professional with experience in embedded systems, cloud computing, and software development.
+      I enjoy solving complex problems and developing innovative solutions that enhance user experience and
+      improve efficiency.
+    </p>
+  </section>
 
-    <div class="education-item">
-      <h3>Gokaraju Rangaraju Institute of Engineering and Technology, Hyderabad, TG - India</h3>
-      <span class="date">July 2022</span>
-      <p><strong>Bachelor of Technology, Computer Science</strong></p>
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" class="container section">
+    <h2>Experience</h2>
+    <div class="exp-card">
+      <h3>Graduate Assistant — George Mason University</h3>
+      <p><strong>Aug 2023 – Present</strong></p>
+      <ul>
+        <li>Assisted in managing lab sessions and grading assignments for Computer Systems course.</li>
+        <li>Supported students in debugging embedded code and understanding hardware-software interactions.</li>
+      </ul>
     </div>
   </section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="section container reveal">
-    <h2>Selected Projects</h2>
-
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="container section">
+    <h2>Projects</h2>
     <div class="projects-grid">
-      <article class="project-card" tabindex="0">
-        <div class="project-thumb robotics">
-          <div class="project-tag">Robotics</div>
-        </div>
-        <div class="project-body">
-          <h3>Smart Pathway Navigator</h3>
-          <p class="meta">Jan 2024 – May 2024</p>
-          <p>Autonomous two-wheeled assistant with obstacle avoidance, real-time audio command processing, and adaptive navigation. Python + C on BeagleBone (DebianOS).</p>
-          <div class="project-actions">
-            <a href="#projects" class="btn small">Details</a>
-          </div>
-        </div>
-      </article>
+      <div class="project-card">
+        <h3>Smart Home System</h3>
+        <p>Developed an IoT-based system using Raspberry Pi for monitoring and controlling devices remotely with a web dashboard.</p>
+      </div>
 
-      <article class="project-card" tabindex="0">
-        <div class="project-thumb code">
-          <div class="project-tag">Full-Stack</div>
-        </div>
-        <div class="project-body">
-          <h3>Chess — Encrypted 2-player App</h3>
-          <p class="meta">Aug 2023 – Dec 2023</p>
-          <p>Secure 2-player chess app using Express/Node/React and MongoDB; integrated OpenSSL for encryption of user data and accounts.</p>
-          <div class="project-actions">
-            <a href="#projects" class="btn small">Details</a>
-          </div>
-        </div>
-      </article>
+      <div class="project-card">
+        <h3>Weather Forecast App</h3>
+        <p>Created a real-time weather application using React and OpenWeather API with animated UI and city-based search.</p>
+      </div>
 
-      <article class="project-card" tabindex="0">
-        <div class="project-thumb ml">
-          <div class="project-tag">ML</div>
-        </div>
-        <div class="project-body">
-          <h3>Crop Yield Prediction</h3>
-          <p class="meta">Mar 2022 – May 2022</p>
-          <p>Keras model to predict crop yields in Indian agriculture, preprocessing noisy datasets and analyzing seasonal trends.</p>
-          <div class="project-actions">
-            <a href="https://drive.google.com/file/d/1buux3DMa9hdCU2SeAYnK1GCCeq9AtcL_/view?usp=sharing" class="btn small" target="_blank" rel="noopener noreferrer">Paper</a>
-          </div>
-        </div>
-      </article>
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>Designed and deployed a modern responsive portfolio website to showcase professional skills and projects.</p>
+      </div>
     </div>
   </section>
 
-  <!-- SKILLS -->
-  <section id="skills" class="section container reveal">
-    <h2>Skills & Tools</h2>
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="container section">
+    <h2>Skills</h2>
     <div class="skills-grid">
-      <div class="skill">
-        <div class="skill-head">
-          <strong>Python</strong><span class="skill-pct">90%</span>
-        </div>
-        <div class="skill-bar"><div class="skill-fill" data-fill="90" aria-hidden="true"></div></div>
-      </div>
-
-      <div class="skill">
-        <div class="skill-head">
-          <strong>C</strong><span class="skill-pct">80%</span>
-        </div>
-        <div class="skill-bar"><div class="skill-fill" data-fill="80" aria-hidden="true"></div></div>
-      </div>
-
-      <div class="skill">
-        <div class="skill-head">
-          <strong>Cloud / AWS</strong><span class="skill-pct">70%</span>
-        </div>
-        <div class="skill-bar"><div class="skill-fill" data-fill="70" aria-hidden="true"></div></div>
-      </div>
-
-      <div class="skill">
-        <div class="skill-head">
-          <strong>React / Node</strong><span class="skill-pct">75%</span>
-        </div>
-        <div class="skill-bar"><div class="skill-fill" data-fill="75" aria-hidden="true"></div></div>
-      </div>
+      <span>Python</span>
+      <span>C++</span>
+      <span>React</span>
+      <span>Node.js</span>
+      <span>Embedded Systems</span>
+      <span>AWS Cloud</span>
+      <span>Docker</span>
+      <span>Linux</span>
     </div>
-
-    <p class="mt-16 small">Other: Git, MongoDB, ClickUp, Zapier, Outlook integration, Real-Time Embedded Systems, Data Structures & Algorithms, Technical Documentation.</p>
   </section>
 
-  <!-- CERTIFICATIONS -->
-  <section id="certifications" class="section container reveal">
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section id="certs" class="container section">
     <h2>Certifications</h2>
     <ul class="cert-list">
-      <li>Cisco Networking Foundations: IP Addressing — LinkedIn Learning</li>
-      <li>Cisco Networking Foundations: Switching and Routing — LinkedIn Learning</li>
-      <li>Cisco Networking Foundations: Fundamentals — LinkedIn Learning</li>
-      <li>Network Security — Coursera</li>
-      <li>PCAP / CPA — Cisco Networking Academy</li>
-      <li>Salesforce Certified Associate — Udemy</li>
-      <li>Data Analytics Internship — Suven Consultants & Technology</li>
-      <li>World Bank — Fiber-Optic Networks</li>
-      <li>Multiple NPTEL courses (HCI, Data Science for Engineers)</li>
+      <li>AWS Certified Cloud Practitioner</li>
+      <li>Microsoft Azure Fundamentals</li>
+      <li>Embedded Systems Specialization — Coursera</li>
     </ul>
   </section>
 
-  <!-- PUBLICATIONS -->
-  <section id="publications" class="section container reveal">
-    <h2>Publications & Documents</h2>
-    <ul>
-      <li>
-        <h3>Crop Yield Prediction in Indian Agriculture Using Machine Learning</h3>
-        <p><strong>Authors:</strong> Dr. Mallikarjuna Rao Cherukupalli, Lokeish Sae Ram Vuppu, Ritwik Goli, Tarun Reddy Talakanti, Shyam Kumar Medikonda</p>
-        <p><strong>Published in:</strong> ICICIAC 2022</p>
-        <p><a href="https://drive.google.com/file/d/1buux3DMa9hdCU2SeAYnK1GCCeq9AtcL_/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Paper</a></p>
-      </li>
-
-      <li>
-        <h3>GetAdventurousNowMedia Recommendation Letter</h3>
-        <span class="date">June 2024 – Oct 2024</span>
-        <p><a href="https://drive.google.com/file/d/1TjLtEhkMkzMaBG0noYwvUOlWhKBjZOIv/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Letter</a></p>
-      </li>
-    </ul>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section container reveal">
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="container section">
     <h2>Contact</h2>
-    <div class="split">
-      <div>
-        <p><i class="fas fa-phone-alt"></i> <a href="tel:+15715695126">+1 (571) 569-5126</a></p>
-        <p><i class="fas fa-envelope"></i> <a href="mailto:lokeish3@gmail.com">lokeish3@gmail.com</a></p>
-        <p><i class="fab fa-github"></i> <a href="https://github.com/lokeish-vuppu" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/lokeish-vuppu-b231271b0/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-      </div>
-
-      <div>
-        <h3>Quick Pitch</h3>
-        <p class="small">I build maintainable solutions that reduce manual effort and scale. If you're hiring for software engineering, embedded systems, or cloud roles, I'd love to talk about fit.</p>
-        <a class="btn primary" href="mailto:lokeish3@gmail.com?subject=Job%20Opportunity">Reach Out</a>
-      </div>
+    <div class="contact-icons">
+      <a href="mailto:lokeish3@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/lokeish-vuppu" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/lokeish-vuppu-b231271b0/" target="_blank"><i class="fab fa-linkedin"></i></a>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container">
-      <small>&copy; 2025 Lokeish Vuppu • <a href="resume.pdf" download>Resume</a></small>
-    </div>
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2025 Lokeish Vuppu | All Rights Reserved.</p>
   </footer>
 
-  <!-- ======= Scripts (bundled inline so no extra file needed) ======= -->
+  <!-- ===== SCRIPT SECTION ===== -->
   <script>
-    /* Defensive, DOM-ready script:
-       - Typed hero line
-       - Mobile nav toggle
-       - Intersection observer for reveal + skill fills
-       - Keyboard accessibility for project cards
-       - Smooth internal link scrolling
-    */
+    document.addEventListener("DOMContentLoaded", () => {
+      // Typing animation
+      const heroText = document.querySelector(".hero-title");
+      const text = "IT Specialist & Software Engineer";
+      let index = 0;
 
-    (function () {
-      // safe DOM ready
-      function ready(fn) {
-        if (document.readyState !== 'loading') fn();
-        else document.addEventListener('DOMContentLoaded', fn);
+      function typeText() {
+        if (index < text.length) {
+          heroText.textContent += text.charAt(index);
+          index++;
+          setTimeout(typeText, 80);
+        }
       }
 
-      ready(function () {
-        /* --- Typed hero line --- */
-        var typedEl = document.getElementById('typed');
-        var phrases = [
-          'IT Specialist & Software Engineer',
-          'Embedded Systems • Cloud • Full-Stack',
-          'Open to SDE / Cloud / Embedded roles'
-        ];
-        if (typedEl) {
-          var tIndex = 0, cIndex = 0, deleting = false;
-          function typeLoop() {
-            var current = phrases[tIndex % phrases.length];
-            if (!deleting) {
-              typedEl.textContent = current.slice(0, cIndex + 1);
-              cIndex++;
-              if (cIndex === current.length) {
-                deleting = true;
-                setTimeout(typeLoop, 1100);
-              } else {
-                setTimeout(typeLoop, 50 + Math.random()*60);
-              }
-            } else {
-              typedEl.textContent = current.slice(0, cIndex - 1);
-              cIndex--;
-              if (cIndex === 0) {
-                deleting = false; tIndex++;
-                setTimeout(typeLoop, 300);
-              } else {
-                setTimeout(typeLoop, 30);
-              }
-            }
-          }
-          // start with empty text
-          typedEl.textContent = '';
-          setTimeout(typeLoop, 300);
-        }
+      if (heroText) {
+        heroText.textContent = "";
+        typeText();
+      }
 
-        /* --- Mobile nav toggle --- */
-        var navToggle = document.getElementById('navToggle');
-        var mainNav = document.getElementById('mainNav');
-        if (navToggle && mainNav) {
-          navToggle.addEventListener('click', function () {
-            var open = mainNav.classList.toggle('open');
-            navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-
-            // small inline styles for mobile presentation (cleared when closed)
-            if (open) {
-              mainNav.style.display = 'flex';
-              mainNav.style.flexDirection = 'column';
-              mainNav.style.position = 'absolute';
-              mainNav.style.right = '24px';
-              mainNav.style.top = '64px';
-              mainNav.style.background = 'rgba(6,6,6,0.92)';
-              mainNav.style.padding = '12px';
-              mainNav.style.borderRadius = '10px';
-              mainNav.style.boxShadow = '0 8px 30px rgba(0,0,0,0.6)';
-            } else {
-              mainNav.style.display = '';
-              mainNav.style.flexDirection = '';
-              mainNav.style.position = '';
-              mainNav.style.right = '';
-              mainNav.style.top = '';
-              mainNav.style.background = '';
-              mainNav.style.padding = '';
-              mainNav.style.borderRadius = '';
-              mainNav.style.boxShadow = '';
-            }
-          });
-
-          // Close mobile nav on resize to larger screens
-          window.addEventListener('resize', function () {
-            if (window.innerWidth > 720 && mainNav.classList.contains('open')) {
-              mainNav.classList.remove('open');
-              navToggle.setAttribute('aria-expanded', 'false');
-              mainNav.style.display = '';
-            }
-          });
-        }
-
-        /* --- Intersection Observer for reveal and skill fill --- */
-        var revealItems = document.querySelectorAll('.reveal');
-        var skillsSection = document.getElementById('skills');
-        var options = { threshold: 0.15 };
-
-        var observer = new IntersectionObserver(function (entries) {
-          entries.forEach(function (entry) {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('visible');
-              // animate skill fills inside the target if present
-              var fills = entry.target.querySelectorAll('.skill-fill');
-              fills.forEach(function (f) {
-                var val = parseInt(f.getAttribute('data-fill'), 10) || 0;
-                // ensure short delay for visual effect
-                setTimeout(function () { f.style.width = val + '%'; }, 120);
-              });
-            }
-          });
-        }, options);
-
-        // observe each revealable section
-        revealItems.forEach(function (el) { observer.observe(el); });
-
-        // also observe skills section specifically
-        if (skillsSection) observer.observe(skillsSection);
-
-        /* --- Project card keyboard accessibility --- */
-        var projectCards = document.querySelectorAll('.project-card');
-        projectCards.forEach(function (card) {
-          card.addEventListener('keydown', function (e) {
-            if (e.key === 'Enter' || e.key === ' ') {
-              e.preventDefault();
-              card.click();
-            }
-          });
+      // Fade-in animation on scroll
+      const sections = document.querySelectorAll("section");
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) entry.target.classList.add("show");
         });
+      }, { threshold: 0.2 });
 
-        /* --- Smooth scroll for internal anchors --- */
-        var internalLinks = document.querySelectorAll('a[href^="#"]');
-        internalLinks.forEach(function (a) {
-          a.addEventListener('click', function (e) {
-            var id = a.getAttribute('href');
-            if (id && id.length > 1) {
-              e.preventDefault();
-              var target = document.querySelector(id);
-              if (target) {
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-              }
-              // close mobile nav if open
-              if (mainNav && mainNav.classList.contains('open')) {
-                mainNav.classList.remove('open');
-                navToggle && navToggle.setAttribute('aria-expanded', 'false');
-                mainNav.style.display = '';
-              }
-            }
-          });
-        });
-
-      }); // end ready
-    })();
+      sections.forEach(section => observer.observe(section));
+    });
   </script>
+
 </body>
 </html>
