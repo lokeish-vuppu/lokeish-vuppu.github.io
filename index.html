@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Lokeish Vuppu — Portfolio</title>
+  <meta name="description" content="Lokeish Vuppu — Software Engineer | IT Specialist. MS Computer Science. Seeking SDE/Cloud/Embedded roles." />
 
   <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -11,32 +12,28 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="style.css">
-
-  <!-- Meta for job-seeker -->
-  <meta name="description" content="Lokeish Vuppu — Software Engineer | IT Specialist. Master of Science in Computer Science. Seeking roles in software engineering, cloud, or embedded systems." />
 </head>
 <body>
+  <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
-      <div class="brand">
-        <a href="#hero" class="logo">Lokeish Vuppu</a>
-      </div>
+      <a href="#hero" class="logo">Lokeish Vuppu</a>
 
-      <nav class="main-nav" id="mainNav">
+      <nav class="main-nav" id="mainNav" aria-label="Primary Navigation">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#certifications">Certs</a>
+        <a href="#publications">Publications</a>
         <a href="#contact">Contact</a>
       </nav>
 
       <div class="cta">
-        <a class="btn" href="resume.pdf" download>Download Resume</a>
+        <a class="btn resume-link" href="resume.pdf" download>Download Resume</a>
       </div>
 
-      <!-- mobile menu toggle -->
-      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -44,36 +41,36 @@
 
   <!-- HERO -->
   <section id="hero" class="hero-section">
-    <div class="hero-overlay"></div>
-    <div class="hero-inner container">
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="container hero-inner">
       <div class="hero-left">
         <p class="hello">HELLO — I'M</p>
         <h1 class="hero-name">Lokeish Vuppu</h1>
-        <p class="hero-role"><span id="typed"></span></p>
+        <p class="hero-role" id="typed" aria-live="polite"></p>
 
         <div class="hero-actions">
           <a class="btn primary" href="mailto:lokeish3@gmail.com">Hire me — Email</a>
           <a class="btn outline" href="#projects">See Projects</a>
         </div>
 
-        <ul class="hero-links">
-          <li><a href="https://github.com/lokeish-vuppu" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/lokeish-vuppu-b231271b0/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
+        <ul class="hero-links" aria-hidden="false">
+          <li><a href="https://github.com/lokeish-vuppu" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/lokeish-vuppu-b231271b0/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
         </ul>
       </div>
 
-      <div class="hero-right">
-        <!-- subtle decorative card/profile -->
+      <aside class="hero-right" aria-label="Profile summary">
         <div class="profile-card">
-          <div class="profile-pic" aria-hidden="true"></div>
+          <div class="profile-pic" role="img" aria-label="Profile picture"></div>
           <div class="profile-info">
             <h3>Lokeish Vuppu</h3>
-            <p>MS Computer Science — George Mason University</p>
-            <p class="small">Software Engineer | Embedded Systems | Cloud</p>
+            <p class="small">MS Computer Science — George Mason University</p>
+            <p class="small muted">Software Engineer | Embedded Systems | Cloud</p>
             <a class="btn small" href="resume.pdf" download>Resume (PDF)</a>
           </div>
         </div>
-      </div>
+      </aside>
     </div>
   </section>
 
@@ -82,19 +79,22 @@
     <div class="split">
       <div>
         <h2>About Me</h2>
-        <p>I am an IT specialist and software engineer with hands-on experience in process improvement, technical documentation, embedded systems, and full-stack software development. I enjoy solving real-world problems with practical, maintainable code and collaborating across teams to deliver business outcomes.</p>
+        <p>I am an IT specialist and software engineer with practical experience in process improvement, IT assistance, and software development. I create technical documentation, collaborate with cross-functional teams, and optimize business processes. I enjoy solving real-world problems with maintainable code and learning new technologies.</p>
         <p><strong>Job-seeker focus:</strong> actively seeking roles in software engineering, cloud engineering, or embedded systems/robotics.</p>
+
         <div class="quick-info">
           <span><strong>Location:</strong> Fairfax, VA</span>
           <span><strong>Open to:</strong> Full-time / Contract / Remote</span>
         </div>
+
         <div class="hero-actions mt-12">
           <a class="btn primary" href="mailto:lokeish3@gmail.com">Contact Me</a>
           <a class="btn outline" href="#projects">View Work</a>
         </div>
       </div>
+
       <div>
-        <div class="about-stats">
+        <div class="about-stats" aria-hidden="true">
           <div class="stat">
             <h3>2+</h3>
             <p>Years Experience</p>
@@ -115,13 +115,16 @@
   <!-- EXPERIENCE -->
   <section id="experience" class="section container reveal">
     <h2>Work Experience</h2>
+
     <div class="timeline">
       <article class="timeline-item">
         <h3>Software Engineer Intern</h3>
         <p class="meta">IT Vertex — Aug 2024 – Present</p>
         <ul>
-          <li>Built an internal communication app and authored technical documentation for maintainability.</li>
-          <li>Collaborated with cross-functional teams to gather requirements and present progress.</li>
+          <li>Built an internal communication app tailored for in-house IT projects.</li>
+          <li>Created technical documentation to ensure clarity and maintainability.</li>
+          <li>Collaborated with teams to identify requirements and iterate on features.</li>
+          <li>Presented project demos and integrated feedback from supervisors.</li>
         </ul>
       </article>
 
@@ -129,10 +132,28 @@
         <h3>IT Specialist Intern</h3>
         <p class="meta">Get Adventurous Now Media — Jun 2024 – Oct 2024</p>
         <ul>
-          <li>Created ClickUp guides, cybersecurity presentations, and automation suggestions using Zapier.</li>
-          <li>Proposed Outlook workflow improvements to streamline communications.</li>
+          <li>Authored ClickUp instruction sheet with screenshots and business case.</li>
+          <li>Created presentations on Cybersecurity and Web-hosting.</li>
+          <li>Researched Outlook workflow improvements and Zapier integrations.</li>
+          <li>Proposed solutions for email-ID reduction and list integrations.</li>
         </ul>
       </article>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section container reveal">
+    <h2>Education</h2>
+    <div class="education-item">
+      <h3>George Mason University, Fairfax, VA - United States</h3>
+      <span class="date">May 2024</span>
+      <p><strong>Master of Science, Computer Science</strong></p>
+    </div>
+
+    <div class="education-item">
+      <h3>Gokaraju Rangaraju Institute of Engineering and Technology, Hyderabad, TG - India</h3>
+      <span class="date">July 2022</span>
+      <p><strong>Bachelor of Technology, Computer Science</strong></p>
     </div>
   </section>
 
@@ -142,13 +163,13 @@
 
     <div class="projects-grid">
       <article class="project-card" tabindex="0">
-        <div class="project-thumb">
+        <div class="project-thumb robotics">
           <div class="project-tag">Robotics</div>
         </div>
         <div class="project-body">
           <h3>Smart Pathway Navigator</h3>
           <p class="meta">Jan 2024 – May 2024</p>
-          <p>Autonomous two-wheeled assistant with obstacle avoidance, real-time audio command processing, and adaptive navigation. Implemented with Python, C on BeagleBone.</p>
+          <p>Autonomous two-wheeled assistant with obstacle avoidance, real-time audio command processing, and adaptive navigation. Python + C on BeagleBone (DebianOS).</p>
           <div class="project-actions">
             <a href="#projects" class="btn small">Details</a>
           </div>
@@ -157,12 +178,12 @@
 
       <article class="project-card" tabindex="0">
         <div class="project-thumb code">
-          <div class="project-tag">Full Stack</div>
+          <div class="project-tag">Full-Stack</div>
         </div>
         <div class="project-body">
           <h3>Chess — Encrypted 2-player App</h3>
           <p class="meta">Aug 2023 – Dec 2023</p>
-          <p>Developed a secure 2-player chess app using Express/Node/React with MongoDB; integrated OpenSSL for encryption of user data.</p>
+          <p>Secure 2-player chess app using Express/Node/React and MongoDB; integrated OpenSSL for encryption of user data and accounts.</p>
           <div class="project-actions">
             <a href="#projects" class="btn small">Details</a>
           </div>
@@ -176,9 +197,9 @@
         <div class="project-body">
           <h3>Crop Yield Prediction</h3>
           <p class="meta">Mar 2022 – May 2022</p>
-          <p>Designed a Keras model to predict yields; preprocessed noisy agricultural datasets and analyzed seasonal patterns.</p>
+          <p>Keras model to predict crop yields in Indian agriculture, preprocessing noisy datasets and analyzing seasonal trends.</p>
           <div class="project-actions">
-            <a href="#projects" class="btn small">Paper</a>
+            <a href="https://drive.google.com/file/d/1buux3DMa9hdCU2SeAYnK1GCCeq9AtcL_/view?usp=sharing" class="btn small" target="_blank" rel="noopener noreferrer">Paper</a>
           </div>
         </div>
       </article>
@@ -193,43 +214,66 @@
         <div class="skill-head">
           <strong>Python</strong><span class="skill-pct">90%</span>
         </div>
-        <div class="skill-bar"><div class="skill-fill" data-fill="90"></div></div>
+        <div class="skill-bar"><div class="skill-fill" data-fill="90" aria-hidden="true"></div></div>
       </div>
 
       <div class="skill">
         <div class="skill-head">
           <strong>C</strong><span class="skill-pct">80%</span>
         </div>
-        <div class="skill-bar"><div class="skill-fill" data-fill="80"></div></div>
+        <div class="skill-bar"><div class="skill-fill" data-fill="80" aria-hidden="true"></div></div>
       </div>
 
       <div class="skill">
         <div class="skill-head">
           <strong>Cloud / AWS</strong><span class="skill-pct">70%</span>
         </div>
-        <div class="skill-bar"><div class="skill-fill" data-fill="70"></div></div>
+        <div class="skill-bar"><div class="skill-fill" data-fill="70" aria-hidden="true"></div></div>
       </div>
 
       <div class="skill">
         <div class="skill-head">
           <strong>React / Node</strong><span class="skill-pct">75%</span>
         </div>
-        <div class="skill-bar"><div class="skill-fill" data-fill="75"></div></div>
+        <div class="skill-bar"><div class="skill-fill" data-fill="75" aria-hidden="true"></div></div>
       </div>
     </div>
 
-    <p class="mt-16 small">Other: Git, MongoDB, ClickUp, Zapier, Outlook integration, Embedded Real-Time Systems, Data Structures & Algorithms, Technical Documentation.</p>
+    <p class="mt-16 small">Other: Git, MongoDB, ClickUp, Zapier, Outlook integration, Real-Time Embedded Systems, Data Structures & Algorithms, Technical Documentation.</p>
   </section>
 
   <!-- CERTIFICATIONS -->
   <section id="certifications" class="section container reveal">
     <h2>Certifications</h2>
     <ul class="cert-list">
-      <li>Cisco Networking Foundations (LinkedIn Learning)</li>
-      <li>Network Security (Coursera)</li>
-      <li>PCAP / CPA (Cisco Networking Academy)</li>
-      <li>Salesforce Associate (Udemy)</li>
-      <li>World Bank — Fiber-Optic Networks certificate</li>
+      <li>Cisco Networking Foundations: IP Addressing — LinkedIn Learning</li>
+      <li>Cisco Networking Foundations: Switching and Routing — LinkedIn Learning</li>
+      <li>Cisco Networking Foundations: Fundamentals — LinkedIn Learning</li>
+      <li>Network Security — Coursera</li>
+      <li>PCAP / CPA — Cisco Networking Academy</li>
+      <li>Salesforce Certified Associate — Udemy</li>
+      <li>Data Analytics Internship — Suven Consultants & Technology</li>
+      <li>World Bank — Fiber-Optic Networks</li>
+      <li>Multiple NPTEL courses (HCI, Data Science for Engineers)</li>
+    </ul>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications" class="section container reveal">
+    <h2>Publications & Documents</h2>
+    <ul>
+      <li>
+        <h3>Crop Yield Prediction in Indian Agriculture Using Machine Learning</h3>
+        <p><strong>Authors:</strong> Dr. Mallikarjuna Rao Cherukupalli, Lokeish Sae Ram Vuppu, Ritwik Goli, Tarun Reddy Talakanti, Shyam Kumar Medikonda</p>
+        <p><strong>Published in:</strong> ICICIAC 2022</p>
+        <p><a href="https://drive.google.com/file/d/1buux3DMa9hdCU2SeAYnK1GCCeq9AtcL_/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Paper</a></p>
+      </li>
+
+      <li>
+        <h3>GetAdventurousNowMedia Recommendation Letter</h3>
+        <span class="date">June 2024 – Oct 2024</span>
+        <p><a href="https://drive.google.com/file/d/1TjLtEhkMkzMaBG0noYwvUOlWhKBjZOIv/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Letter</a></p>
+      </li>
     </ul>
   </section>
 
@@ -238,54 +282,183 @@
     <h2>Contact</h2>
     <div class="split">
       <div>
-        <p><i class="fas fa-envelope"></i> <a href="mailto:lokeish3@gmail.com">lokeish3@gmail.com</a></p>
         <p><i class="fas fa-phone-alt"></i> <a href="tel:+15715695126">+1 (571) 569-5126</a></p>
-        <p><i class="fab fa-github"></i> <a href="https://github.com/lokeish-vuppu" target="_blank">GitHub</a></p>
-        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/lokeish-vuppu-b231271b0/" target="_blank">LinkedIn</a></p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:lokeish3@gmail.com">lokeish3@gmail.com</a></p>
+        <p><i class="fab fa-github"></i> <a href="https://github.com/lokeish-vuppu" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/lokeish-vuppu-b231271b0/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
       </div>
+
       <div>
         <h3>Quick Pitch</h3>
-        <p class="small">I build maintainable solutions that reduce manual work and scale. If you're hiring for software engineering, embedded systems, or cloud roles, I'd love to discuss fit.</p>
+        <p class="small">I build maintainable solutions that reduce manual effort and scale. If you're hiring for software engineering, embedded systems, or cloud roles, I'd love to talk about fit.</p>
         <a class="btn primary" href="mailto:lokeish3@gmail.com?subject=Job%20Opportunity">Reach Out</a>
       </div>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container">
       <small>&copy; 2025 Lokeish Vuppu • <a href="resume.pdf" download>Resume</a></small>
     </div>
   </footer>
 
- <!-- JavaScript for animations and interactivity -->
-    <script>
-        // Example: Smooth section fade-in on scroll
-        const sections = document.querySelectorAll('section');
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('show');
-                }
-            });
-        }, { threshold: 0.2 });
+  <!-- ======= Scripts (bundled inline so no extra file needed) ======= -->
+  <script>
+    /* Defensive, DOM-ready script:
+       - Typed hero line
+       - Mobile nav toggle
+       - Intersection observer for reveal + skill fills
+       - Keyboard accessibility for project cards
+       - Smooth internal link scrolling
+    */
 
-        sections.forEach(section => observer.observe(section));
+    (function () {
+      // safe DOM ready
+      function ready(fn) {
+        if (document.readyState !== 'loading') fn();
+        else document.addEventListener('DOMContentLoaded', fn);
+      }
 
-        // Example: Typing effect for hero section
-        const heroText = document.querySelector('.hero-content p');
-        const text = "IT Specialist & Software Engineer";
-        let index = 0;
-
-        function typeText() {
-            if (index < text.length) {
-                heroText.textContent += text.charAt(index);
-                index++;
-                setTimeout(typeText, 80);
+      ready(function () {
+        /* --- Typed hero line --- */
+        var typedEl = document.getElementById('typed');
+        var phrases = [
+          'IT Specialist & Software Engineer',
+          'Embedded Systems • Cloud • Full-Stack',
+          'Open to SDE / Cloud / Embedded roles'
+        ];
+        if (typedEl) {
+          var tIndex = 0, cIndex = 0, deleting = false;
+          function typeLoop() {
+            var current = phrases[tIndex % phrases.length];
+            if (!deleting) {
+              typedEl.textContent = current.slice(0, cIndex + 1);
+              cIndex++;
+              if (cIndex === current.length) {
+                deleting = true;
+                setTimeout(typeLoop, 1100);
+              } else {
+                setTimeout(typeLoop, 50 + Math.random()*60);
+              }
+            } else {
+              typedEl.textContent = current.slice(0, cIndex - 1);
+              cIndex--;
+              if (cIndex === 0) {
+                deleting = false; tIndex++;
+                setTimeout(typeLoop, 300);
+              } else {
+                setTimeout(typeLoop, 30);
+              }
             }
+          }
+          // start with empty text
+          typedEl.textContent = '';
+          setTimeout(typeLoop, 300);
         }
 
-        heroText.textContent = "";
-        typeText();
-    </script>
+        /* --- Mobile nav toggle --- */
+        var navToggle = document.getElementById('navToggle');
+        var mainNav = document.getElementById('mainNav');
+        if (navToggle && mainNav) {
+          navToggle.addEventListener('click', function () {
+            var open = mainNav.classList.toggle('open');
+            navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+
+            // small inline styles for mobile presentation (cleared when closed)
+            if (open) {
+              mainNav.style.display = 'flex';
+              mainNav.style.flexDirection = 'column';
+              mainNav.style.position = 'absolute';
+              mainNav.style.right = '24px';
+              mainNav.style.top = '64px';
+              mainNav.style.background = 'rgba(6,6,6,0.92)';
+              mainNav.style.padding = '12px';
+              mainNav.style.borderRadius = '10px';
+              mainNav.style.boxShadow = '0 8px 30px rgba(0,0,0,0.6)';
+            } else {
+              mainNav.style.display = '';
+              mainNav.style.flexDirection = '';
+              mainNav.style.position = '';
+              mainNav.style.right = '';
+              mainNav.style.top = '';
+              mainNav.style.background = '';
+              mainNav.style.padding = '';
+              mainNav.style.borderRadius = '';
+              mainNav.style.boxShadow = '';
+            }
+          });
+
+          // Close mobile nav on resize to larger screens
+          window.addEventListener('resize', function () {
+            if (window.innerWidth > 720 && mainNav.classList.contains('open')) {
+              mainNav.classList.remove('open');
+              navToggle.setAttribute('aria-expanded', 'false');
+              mainNav.style.display = '';
+            }
+          });
+        }
+
+        /* --- Intersection Observer for reveal and skill fill --- */
+        var revealItems = document.querySelectorAll('.reveal');
+        var skillsSection = document.getElementById('skills');
+        var options = { threshold: 0.15 };
+
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              // animate skill fills inside the target if present
+              var fills = entry.target.querySelectorAll('.skill-fill');
+              fills.forEach(function (f) {
+                var val = parseInt(f.getAttribute('data-fill'), 10) || 0;
+                // ensure short delay for visual effect
+                setTimeout(function () { f.style.width = val + '%'; }, 120);
+              });
+            }
+          });
+        }, options);
+
+        // observe each revealable section
+        revealItems.forEach(function (el) { observer.observe(el); });
+
+        // also observe skills section specifically
+        if (skillsSection) observer.observe(skillsSection);
+
+        /* --- Project card keyboard accessibility --- */
+        var projectCards = document.querySelectorAll('.project-card');
+        projectCards.forEach(function (card) {
+          card.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              card.click();
+            }
+          });
+        });
+
+        /* --- Smooth scroll for internal anchors --- */
+        var internalLinks = document.querySelectorAll('a[href^="#"]');
+        internalLinks.forEach(function (a) {
+          a.addEventListener('click', function (e) {
+            var id = a.getAttribute('href');
+            if (id && id.length > 1) {
+              e.preventDefault();
+              var target = document.querySelector(id);
+              if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }
+              // close mobile nav if open
+              if (mainNav && mainNav.classList.contains('open')) {
+                mainNav.classList.remove('open');
+                navToggle && navToggle.setAttribute('aria-expanded', 'false');
+                mainNav.style.display = '';
+              }
+            }
+          });
+        });
+
+      }); // end ready
+    })();
+  </script>
 </body>
 </html>
