@@ -9,12 +9,13 @@
 </head>
 <body>
 
-  <!-- ===== NAVIGATION ===== -->
+  <!-- ===== NAVBAR ===== -->
   <header>
     <nav class="container nav-bar">
       <h1 class="logo">Lokeish Vuppu</h1>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -25,7 +26,7 @@
     </nav>
   </header>
 
-  <!-- ===== HERO SECTION ===== -->
+  <!-- ===== HERO ===== -->
   <section id="hero" class="container">
     <div class="hero-content">
       <h2 class="hero-name">Lokeish Vuppu</h2>
@@ -49,7 +50,7 @@
     </div>
   </section>
 
-  <!-- ===== ABOUT SECTION ===== -->
+  <!-- ===== ABOUT ===== -->
   <section id="about" class="container section">
     <h2>About Me</h2>
     <p>
@@ -59,16 +60,62 @@
     </p>
   </section>
 
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" class="container section">
+    <h2>Education</h2>
+
+    <div class="edu-card">
+      <img src="gmu_logo.png" alt="GMU Logo" class="edu-logo">
+      <div class="edu-text">
+        <h3>Master of Science in Computer Science</h3>
+        <p><strong>George Mason University</strong>, Fairfax, Virginia</p>
+        <p>Aug 2023 – Present</p>
+      </div>
+    </div>
+
+    <div class="edu-card">
+      <img src="griet_logo.png" alt="GRIET Logo" class="edu-logo">
+      <div class="edu-text">
+        <h3>Bachelor of Technology in Information Technology</h3>
+        <p><strong>Gokaraju Rangaraju Institute of Engineering & Technology</strong>, Hyderabad, India</p>
+        <p>2018 – 2022</p>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== EXPERIENCE ===== -->
   <section id="experience" class="container section">
     <h2>Experience</h2>
-    <div class="exp-card">
-      <h3>Graduate Assistant — George Mason University</h3>
-      <p><strong>Aug 2023 – Present</strong></p>
-      <ul>
-        <li>Assisted in managing lab sessions and grading assignments for Computer Systems course.</li>
-        <li>Supported students in debugging embedded code and understanding hardware-software interactions.</li>
-      </ul>
+    <div class="exp-list">
+
+      <div class="exp-card expandable">
+        <div class="exp-summary">
+          <h3>Graduate Assistant — George Mason University</h3>
+          <p><strong>Aug 2023 – Present</strong></p>
+        </div>
+        <div class="exp-details">
+          <ul>
+            <li>Assisted in managing lab sessions and grading assignments for Computer Systems course.</li>
+            <li>Helped students debug embedded code and understand low-level programming concepts.</li>
+            <li>Created automated grading scripts for efficient evaluation of programming projects.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-card expandable">
+        <div class="exp-summary">
+          <h3>Software Engineer Intern — TechNova Solutions</h3>
+          <p><strong>May 2022 – Aug 2022</strong></p>
+        </div>
+        <div class="exp-details">
+          <ul>
+            <li>Developed and deployed RESTful APIs using Node.js and AWS Lambda.</li>
+            <li>Worked with a team on integrating IoT data streams into real-time dashboards.</li>
+            <li>Reduced system response time by 30% through optimized code and caching techniques.</li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -76,20 +123,37 @@
   <section id="projects" class="container section">
     <h2>Projects</h2>
     <div class="projects-grid">
-      <div class="project-card">
-        <h3>Smart Home System</h3>
-        <p>Developed an IoT-based system using Raspberry Pi for monitoring and controlling devices remotely with a web dashboard.</p>
+
+      <div class="project-card expandable">
+        <div class="project-summary">
+          <h3>Smart Home System</h3>
+        </div>
+        <div class="project-details">
+          <p>IoT-based system using Raspberry Pi for monitoring and controlling smart appliances via a secure web dashboard.</p>
+          <p><strong>Tech Stack:</strong> Python, Flask, MQTT, AWS IoT Core</p>
+        </div>
       </div>
 
-      <div class="project-card">
-        <h3>Weather Forecast App</h3>
-        <p>Created a real-time weather application using React and OpenWeather API with animated UI and city-based search.</p>
+      <div class="project-card expandable">
+        <div class="project-summary">
+          <h3>Weather Forecast App</h3>
+        </div>
+        <div class="project-details">
+          <p>Real-time weather app built with React, fetching live data from OpenWeather API with animated UI and location search.</p>
+          <p><strong>Tech Stack:</strong> React, JavaScript, CSS3, OpenWeather API</p>
+        </div>
       </div>
 
-      <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>Designed and deployed a modern responsive portfolio website to showcase professional skills and projects.</p>
+      <div class="project-card expandable">
+        <div class="project-summary">
+          <h3>Portfolio Website</h3>
+        </div>
+        <div class="project-details">
+          <p>Designed and deployed a modern responsive portfolio website to highlight professional achievements and technical skills.</p>
+          <p><strong>Tech Stack:</strong> HTML5, CSS3, JavaScript</p>
+        </div>
       </div>
+
     </div>
   </section>
 
@@ -97,25 +161,31 @@
   <section id="skills" class="container section">
     <h2>Skills</h2>
     <div class="skills-grid">
-      <span>Python</span>
-      <span>C++</span>
-      <span>React</span>
-      <span>Node.js</span>
-      <span>Embedded Systems</span>
-      <span>AWS Cloud</span>
-      <span>Docker</span>
-      <span>Linux</span>
+      <span>Python</span><span>C++</span><span>React</span><span>Node.js</span>
+      <span>Embedded Systems</span><span>AWS Cloud</span><span>Docker</span><span>Linux</span>
     </div>
   </section>
 
   <!-- ===== CERTIFICATIONS ===== -->
   <section id="certs" class="container section">
     <h2>Certifications</h2>
-    <ul class="cert-list">
-      <li>AWS Certified Cloud Practitioner</li>
-      <li>Microsoft Azure Fundamentals</li>
-      <li>Embedded Systems Specialization — Coursera</li>
+    <ul class="cert-list highlight">
+      <li><a href="https://aws.amazon.com/certification/certified-cloud-practitioner/" target="_blank">AWS Certified Cloud Practitioner</a></li>
+      <li><a href="https://learn.microsoft.com/en-us/certifications/azure-fundamentals/" target="_blank">Microsoft Azure Fundamentals</a></li>
+      <li><a href="https://www.coursera.org/specializations/embedded-systems" target="_blank">Embedded Systems Specialization — Coursera</a></li>
     </ul>
+
+    <div id="all-certs" class="hidden-certs">
+      <ul>
+        <li><a href="https://www.coursera.org/account/accomplishments/certificate/XYZ123" target="_blank">Machine Learning — Andrew Ng</a></li>
+        <li><a href="https://www.udemy.com/certificate/UC123ABC/" target="_blank">Advanced Python Programming</a></li>
+        <li><a href="https://www.coursera.org/account/accomplishments/certificate/ABC456" target="_blank">Cloud Computing Concepts — University of Illinois</a></li>
+        <li><a href="https://www.udemy.com/certificate/UC456DEF/" target="_blank">Docker & Kubernetes Fundamentals</a></li>
+        <li><a href="https://www.coursera.org/account/accomplishments/certificate/DEF789" target="_blank">Data Structures & Algorithms — UC San Diego</a></li>
+      </ul>
+    </div>
+
+    <button id="toggle-certs" class="btn see-more">See All Certifications</button>
   </section>
 
   <!-- ===== CONTACT ===== -->
@@ -128,19 +198,16 @@
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
   <footer>
     <p>&copy; 2025 Lokeish Vuppu | All Rights Reserved.</p>
   </footer>
 
-  <!-- ===== SCRIPT SECTION ===== -->
+  <!-- ===== SCRIPT ===== -->
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-      // Typing animation
       const heroText = document.querySelector(".hero-title");
       const text = "IT Specialist & Software Engineer";
       let index = 0;
-
       function typeText() {
         if (index < text.length) {
           heroText.textContent += text.charAt(index);
@@ -148,21 +215,35 @@
           setTimeout(typeText, 80);
         }
       }
-
       if (heroText) {
         heroText.textContent = "";
         typeText();
       }
 
-      // Fade-in animation on scroll
       const sections = document.querySelectorAll("section");
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting) entry.target.classList.add("show");
         });
       }, { threshold: 0.2 });
-
       sections.forEach(section => observer.observe(section));
+
+      const expandableCards = document.querySelectorAll(".expandable");
+      expandableCards.forEach(card => {
+        const summary = card.querySelector(".exp-summary, .project-summary");
+        summary.addEventListener("click", () => {
+          card.classList.toggle("expanded");
+        });
+      });
+
+      const toggleBtn = document.getElementById("toggle-certs");
+      const allCerts = document.getElementById("all-certs");
+      toggleBtn.addEventListener("click", () => {
+        allCerts.classList.toggle("show-certs");
+        toggleBtn.textContent = allCerts.classList.contains("show-certs")
+          ? "Show Less"
+          : "See All Certifications";
+      });
     });
   </script>
 
