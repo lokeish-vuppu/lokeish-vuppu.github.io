@@ -257,7 +257,35 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <script src="script.js" defer></script>
+ <!-- JavaScript for animations and interactivity -->
+    <script>
+        // Example: Smooth section fade-in on scroll
+        const sections = document.querySelectorAll('section');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, { threshold: 0.2 });
+
+        sections.forEach(section => observer.observe(section));
+
+        // Example: Typing effect for hero section
+        const heroText = document.querySelector('.hero-content p');
+        const text = "IT Specialist & Software Engineer";
+        let index = 0;
+
+        function typeText() {
+            if (index < text.length) {
+                heroText.textContent += text.charAt(index);
+                index++;
+                setTimeout(typeText, 80);
+            }
+        }
+
+        heroText.textContent = "";
+        typeText();
+    </script>
 </body>
 </html>
