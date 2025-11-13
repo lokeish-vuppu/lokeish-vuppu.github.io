@@ -1,240 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lokeish's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lokeish Vuppu — Portfolio</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Meta for job-seeker -->
+  <meta name="description" content="Lokeish Vuppu — Software Engineer | IT Specialist. Master of Science in Computer Science. Seeking roles in software engineering, cloud, or embedded systems." />
 </head>
 <body>
-    <header>
-        <div class="container header-container">
-            <div class="name">
-                <h1>Lokeish's Portfolio</h1>
-            </div>
-            <nav>
-                <a href="#about"><i class="fas fa-user"></i> About</a>
-                <a href="#Experience"><i class="fas fa-briefcase"></i> Experience</a>
-                <a href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
-                <a href="#projects"><i class="fas fa-code"></i> Projects</a>
-                <a href="#skills"><i class="fas fa-cogs"></i> Skills</a>
-                <a href="#certifications"><i class="fas fa-certificate"></i> Certifications</a>
-                <a href="#publications"><i class="fas fa-file-alt"></i> Publications</a>
-                <a href="#Contact"><i class="fas fa-envelope"></i> Contact</a>
-            </nav>
-        </div>
-    </header>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="#hero" class="logo">Lokeish Vuppu</a>
+      </div>
 
-    <section id="hero" class="container">
-        <div class="hero-content">
-            <h2>Lokeish Vuppu</h2>
-            <p>IT Specialist & Software Engineer</p>
-        </div>
-    </section>
+      <nav class="main-nav" id="mainNav">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certs</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-    <section id="about" class="container">
-        <h2>ABOUT ME</h2>
-        <p>I am an IT specialist and software engineer intern with practical experience in process improvement, IT assistance, and software development who is extremely driven and meticulous. Competent in creating technical documentation, working with cross-functional teams, and optimizing business processes. I am passionate about using technology to solve real-world problems and am always eager to learn new skills and technologies.</p>
-    </section>
+      <div class="cta">
+        <a class="btn" href="resume.pdf" download>Download Resume</a>
+      </div>
 
-    <section id="Experience" class="container">
-        <h2>WORK EXPERIENCE</h2>
-        <div class="job">
-            <h3>Software Engineer Intern - IT Vertex</h3>
-            <span class="date">Aug 2024 – Present</span>
-            <ul>
-                <li>Developed a communication software tailored to support in-house IT projects for IT Vertex.</li>
-                <li>Created technical documentation to ensure clear, consistent communication and easy reference for future development and maintenance.</li>
-                <li>Collaborated with teams to identify project requirements and feedback ensuring software solutions met business and technical needs.</li>
-                <li>Participated in performance assessments through project presentations, with feedback from supervisors and technical team members for improvement.</li>
-            </ul>
-        </div>
-        <div class="job">
-            <h3>IT Specialist Intern - Get Adventurous Now Media</h3>
-            <span class="date">June 2024 – Oct 2024</span>
-            <ul>
-                <li>Developed a comprehensive ClickUp instruction sheet with detailed explanations, screenshots, and business case justification.</li>
-                <li>Created presentations on Cybersecurity and Web-hosting.</li>
-                <li>Streamlined Outlook email workflow by researching and proposing integrations.</li>
-                <li>Identified limitations and potential solutions for email ID reduction and email list integrations using Zapier.</li>
-            </ul>
-        </div>
-    </section>
+      <!-- mobile menu toggle -->
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
 
-    <section id="education" class="container">
-        <h2>EDUCATION</h2>
-        <div class="education-item">
-            <h3>George Mason University, Fairfax, VA - United States</h3>
-            <span class="date">May 2024</span>
-            <p><strong>Master of Science, Computer Science</strong></p>
-        </div>
-        <div class="education-item">
-            <h3>Gokaraju Rangaraju Institute of Engineering and Technology, Hyderabad, TG - India</h3>
-            <span class="date">July 2022</span>
-            <p><strong>Bachelor of Technology, Computer Science</strong></p>
-        </div>
-    </section>
+  <!-- HERO -->
+  <section id="hero" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-inner container">
+      <div class="hero-left">
+        <p class="hello">HELLO — I'M</p>
+        <h1 class="hero-name">Lokeish Vuppu</h1>
+        <p class="hero-role"><span id="typed"></span></p>
 
-    <section id="projects" class="container">
-        <h2>PROJECTS</h2>
-        <div class="project">
-            <h3>Smart Pathway Navigator</h3>
-            <span class="date">January 2024 – May 2024</span>
-            <ul>
-                <li>Developed an autonomous two-wheeled robotic assistant designed to maneuver, track paths, avoid collisions by detecting obstacles and follow orders according to specific voice commands.</li>
-                <li>Implemented in Python for programming and C for instructing the Beaglebone on DebianOS.</li>
-                <li>Robot is engineered to intelligently adapt and improve day-to-day activities by enhancing the efficiency and safety of delivery services, contributing to the evolution of self-driving vehicle technologies.</li>
-                <li>Implemented threads include obstacle avoidance, real-time audio processing, monitoring, and synchronization.</li>
-                <li>For Audio Processing, used a Python Process for voice commands, microphone sensor interface, and audio command processing using naive NLP.</li>
-                <li>For obstacle detection, used ultrasonic sensor for distance measurement and obstacle avoidance.</li>
-            </ul>
+        <div class="hero-actions">
+          <a class="btn primary" href="mailto:lokeish3@gmail.com">Hire me — Email</a>
+          <a class="btn outline" href="#projects">See Projects</a>
         </div>
-        <div class="project">
-            <h3>Chess</h3>
-            <span class="date">August 2023 – December 2023</span>
-            <ul>
-                <li>Developed an application for a 2-player chess game, focusing on security encryption of player data.</li>
-                <li>Implemented the MVC design model to develop the application.</li>
-                <li>Used MongoDB to store player stats and account details.</li>
-                <li>Designed the application with Express, Node, and React frameworks in JavaScript.</li>
-                <li>Integrated OpenSSL certificate for end-to-end encryption of the application.</li>
-            </ul>
-        </div>
-        <div class="project">
-            <h3>Crop Yield Prediction In Indian Agriculture</h3>
-            <span class="date">March 2022 – May 2022</span>
-            <ul>
-                <li>Designed a machine learning model using Keras to predict crop yield in Indian agriculture.</li>
-                <li>Analyzed historical yield patterns of different crop types in different harvest seasons and the conditions they depend on.</li>
-                <li>Performed data preprocessing on a largely noisy dataset.</li>
-                <li>Presented the project to a panel of professors for final review.</li>
-            </ul>
-        </div>
-    </section>
 
-    <section id="skills" class="container">
-        <h2>SKILLS & KNOWLEDGE</h2>
-        <ul>
-            <li><i class="fab fa-python"></i> Python</li>
-            <li><i class="fab fa-c"></i> C</li>
-            <li><i class="fab fa-aws"></i> AWS</li>
-            <li>Git</li>
-            <li>ClickUp</li>
-            <li>Zapier</li>
-            <li>Outlook integrations</li>
-            <li>Real-Time Embedded Systems</li>
-            <li>Programming Tools</li>
-            <li>Software Engineering for World Wide Web</li>
-            <li>Software Model Design</li>
-            <li>Database Systems</li>
-            <li>Computer Systems and System Programming</li>
-            <li>Data Structures and Algorithms</li>
-            <li>Operating Systems</li>
-            <li>Compiler Design</li>
-            <li>Computer Architecture</li>
-            <li>Agile Software Process</li>
-            <li>Data Mining</li>
-            <li>Machine Learning</li>
-            <li>Cloud Computing</li>
-            <li>Computer Networks</li>
-            <li>Problem Solving/Decision Making</li>
-            <li>Technical documentation</li>
-            <li>Workflow automation</li>
-            <li>Teamwork & Collaboration</li>
+        <ul class="hero-links">
+          <li><a href="https://github.com/lokeish-vuppu" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/lokeish-vuppu-b231271b0/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
         </ul>
-    </section>
+      </div>
 
-    <section id="certifications" class="container">
-        <h2>CERTIFICATIONS</h2>
+      <div class="hero-right">
+        <!-- subtle decorative card/profile -->
+        <div class="profile-card">
+          <div class="profile-pic" aria-hidden="true"></div>
+          <div class="profile-info">
+            <h3>Lokeish Vuppu</h3>
+            <p>MS Computer Science — George Mason University</p>
+            <p class="small">Software Engineer | Embedded Systems | Cloud</p>
+            <a class="btn small" href="resume.pdf" download>Resume (PDF)</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section container reveal">
+    <div class="split">
+      <div>
+        <h2>About Me</h2>
+        <p>I am an IT specialist and software engineer with hands-on experience in process improvement, technical documentation, embedded systems, and full-stack software development. I enjoy solving real-world problems with practical, maintainable code and collaborating across teams to deliver business outcomes.</p>
+        <p><strong>Job-seeker focus:</strong> actively seeking roles in software engineering, cloud engineering, or embedded systems/robotics.</p>
+        <div class="quick-info">
+          <span><strong>Location:</strong> Fairfax, VA</span>
+          <span><strong>Open to:</strong> Full-time / Contract / Remote</span>
+        </div>
+        <div class="hero-actions mt-12">
+          <a class="btn primary" href="mailto:lokeish3@gmail.com">Contact Me</a>
+          <a class="btn outline" href="#projects">View Work</a>
+        </div>
+      </div>
+      <div>
+        <div class="about-stats">
+          <div class="stat">
+            <h3>2+</h3>
+            <p>Years Experience</p>
+          </div>
+          <div class="stat">
+            <h3>10+</h3>
+            <p>Projects & Research</p>
+          </div>
+          <div class="stat">
+            <h3>15+</h3>
+            <p>Certifications</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section container reveal">
+    <h2>Work Experience</h2>
+    <div class="timeline">
+      <article class="timeline-item">
+        <h3>Software Engineer Intern</h3>
+        <p class="meta">IT Vertex — Aug 2024 – Present</p>
         <ul>
-             <li>
-                <h3>Cisco Networking Foundations: IP Addressing</h3>
-                <p><strong>Issuer:</strong> LinkedIn Learning</p>
-                <p><a href="https://www.linkedin.com/learning/certificates/0d333a92712aad5f3a61aca23c5755f3adbd93960ea464a32dbddcc8607ff925?trk=share_certificate" target="_blank" rel="noopener noreferrer">View Certificate</a></p> </li>
-            
-            <li>
-                <h3>Cisco Networking Foundations: Switching and Routing</h3>
-                <p><strong>Issuer:</strong> LinkedIn Learning</p>
-                <p><a href="https://www.linkedin.com/learning/certificates/2f9072adc7e2fbe1558c11a06a7c480ecd4299c00abe5f75ed0ac1b32347c3a0?trk=share_certificate " target="_blank" rel="noopener noreferrer">View Certificate</a></p> </li>
-             <li>
-                <h3>Cisco Networking Foundations: Fundamentals of Cisco Networking</h3>
-                <p><strong>Issuer:</strong> LinkedIn Learning</p>
-                <p><a href="https://www.linkedin.com/learning/certificates/c0c726f4f85aa33718f3753b4d8214c6ae216ee8ab1a70ec13b92d30b4a5ee73?trk=share_certificate" target="_blank" rel="noopener noreferrer">View Certificate</a></p> </li>
-            
-            <li>
-                <h3>Innovative Business Models for Expanding Fiber-Optic Networks and Closing the Access Gaps</h3>
-                <p><strong>Issuer:</strong> The World Bank Group</p>
-                <p><a href="https://drive.google.com/file/d/1clPkNhj9_jp1IC4SRdLdpbxJbO20oh0o/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Certificate</a></p> </li>
-            <li>
-                <h3>Network Security Cisco Learning and Certifications</h3>
-                <p><strong>Issuer:</strong> Coursera</p>
-                <p><a href="https://www.coursera.org/account/accomplishments/verify/TC9EDVORKOVX" target="_blank" rel="noopener noreferrer">View Certificate</a></p> </li>
-    
-            <li>
-                <h3>Salesforce Certified Associate</h3>
-                <p><strong>Issuer:</strong> Udemy</p>
-                <p><a href="https://drive.google.com/file/d/1kl8AZqbfKfXDp_9RRRs_iyXxQVhkqJ3C/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Certificate</a></p> </li>
-            <li>
-                <h3>Data Analytics Internship</h3>
-                <p><strong>Issuer:</strong> Suven Consultants & Technology</p>
-                <p><a href="https://drive.google.com/file/d/1tIKkvTxB5mho7bO4aqVis4HRA4UPP3Am/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Certificate</a></p> </li>
-            
-            <li>
-                <h3>User Centric Computing for Human Computer Interaction</h3>
-                <p><strong>Issuer:</strong> NPTEL</p>
-                <p><a href="https://drive.google.com/file/d/1BqzXqMFGMMlMsWoRsx11Qyl0h9DWTDOF/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Certificate</a></p> </li>
-             <li>
-                <h3>Data Science for Engineers</h3>
-                <p><strong>Issuer:</strong> NPTEL</p>
-                <p><a href="https://drive.google.com/file/d/11o1SnxHLDuLUvCXKkPqrVedE_TlJLMQh/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Certificate</a></p> </li>
-
-            <li>
-                <h3>CPA - Programming Essentials in C++</h3>
-                <p><strong>Issuer: </strong>Cisco Networking Academy </p>
-                <p><a href="https://drive.google.com/file/d/1QuCytGDlXh58nkQsF-TXgqwF1gaso07A/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Certificate</a></p> </li>
-           <li>
-                <h3>Introduction to IoT</h3>
-                <p><strong>Issuer: </strong>Cisco Networking Academy </p>
-                <p><a href="https://drive.google.com/file/d/1KtpmN4KEL3T62vzz7JkFdfqNZjNJMK2p/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Certificate</a></p> </li>
-            
-            <li>
-                <h3>PCAP - Programming Essentials in Python</h3>
-                <p><strong>Issuer:</strong> Cisco Networking Academy </p>
-                <p><a href="https://drive.google.com/file/d/14ELI-snf8NJQpxR3oGgVDw6vh0XNCgdz/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Certificate</a></p> </li>
-            
+          <li>Built an internal communication app and authored technical documentation for maintainability.</li>
+          <li>Collaborated with cross-functional teams to gather requirements and present progress.</li>
         </ul>
-    </section>
+      </article>
 
-    <section id="publications" class="container">
-        <h2>Publications & Documents</h2>
+      <article class="timeline-item">
+        <h3>IT Specialist Intern</h3>
+        <p class="meta">Get Adventurous Now Media — Jun 2024 – Oct 2024</p>
         <ul>
-            <li>
-                <h3>Crop Yield Prediction in Indian Agriculture Using Machine Learning</h3>
-                <p><strong>Authors:</strong> Dr. Mallikarjuna Rao Cherukupalli, Lokeish Sae Ram Vuppu, Ritwik Goli, Tarun Reddy Talakanti, Shyam Kumar Medikonda </p>
-                <p><strong>Published in: ICICIAC </strong> 2022</p>
-                <p><a href="https://drive.google.com/file/d/1buux3DMa9hdCU2SeAYnK1GCCeq9AtcL_/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Paper</a></p>
-            </li>
-            <li>
-                <h3>GetAdventurousNowMedia Recommendation Letter</h3>
-                <span class="date">June 2024 – Oct 2024</span>
-                <p><a href="https://drive.google.com/file/d/1TjLtEhkMkzMaBG0noYwvUOlWhKBjZOIv/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Letter</a></p>
-            </li>
+          <li>Created ClickUp guides, cybersecurity presentations, and automation suggestions using Zapier.</li>
+          <li>Proposed Outlook workflow improvements to streamline communications.</li>
         </ul>
-    </section>
+      </article>
+    </div>
+  </section>
 
-    <section id="Contact" class="container">
-        <h2>Contact</h2>
-        <p><i class="fas fa-phone-alt"></i> <a href="tel:+15715695126">+1 (571) 569-5126</a></p>
+  <!-- PROJECTS -->
+  <section id="projects" class="section container reveal">
+    <h2>Selected Projects</h2>
+
+    <div class="projects-grid">
+      <article class="project-card" tabindex="0">
+        <div class="project-thumb">
+          <div class="project-tag">Robotics</div>
+        </div>
+        <div class="project-body">
+          <h3>Smart Pathway Navigator</h3>
+          <p class="meta">Jan 2024 – May 2024</p>
+          <p>Autonomous two-wheeled assistant with obstacle avoidance, real-time audio command processing, and adaptive navigation. Implemented with Python, C on BeagleBone.</p>
+          <div class="project-actions">
+            <a href="#projects" class="btn small">Details</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" tabindex="0">
+        <div class="project-thumb code">
+          <div class="project-tag">Full Stack</div>
+        </div>
+        <div class="project-body">
+          <h3>Chess — Encrypted 2-player App</h3>
+          <p class="meta">Aug 2023 – Dec 2023</p>
+          <p>Developed a secure 2-player chess app using Express/Node/React with MongoDB; integrated OpenSSL for encryption of user data.</p>
+          <div class="project-actions">
+            <a href="#projects" class="btn small">Details</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" tabindex="0">
+        <div class="project-thumb ml">
+          <div class="project-tag">ML</div>
+        </div>
+        <div class="project-body">
+          <h3>Crop Yield Prediction</h3>
+          <p class="meta">Mar 2022 – May 2022</p>
+          <p>Designed a Keras model to predict yields; preprocessed noisy agricultural datasets and analyzed seasonal patterns.</p>
+          <div class="project-actions">
+            <a href="#projects" class="btn small">Paper</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section container reveal">
+    <h2>Skills & Tools</h2>
+    <div class="skills-grid">
+      <div class="skill">
+        <div class="skill-head">
+          <strong>Python</strong><span class="skill-pct">90%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-fill="90"></div></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-head">
+          <strong>C</strong><span class="skill-pct">80%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-fill="80"></div></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-head">
+          <strong>Cloud / AWS</strong><span class="skill-pct">70%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-fill="70"></div></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-head">
+          <strong>React / Node</strong><span class="skill-pct">75%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-fill="75"></div></div>
+      </div>
+    </div>
+
+    <p class="mt-16 small">Other: Git, MongoDB, ClickUp, Zapier, Outlook integration, Embedded Real-Time Systems, Data Structures & Algorithms, Technical Documentation.</p>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section container reveal">
+    <h2>Certifications</h2>
+    <ul class="cert-list">
+      <li>Cisco Networking Foundations (LinkedIn Learning)</li>
+      <li>Network Security (Coursera)</li>
+      <li>PCAP / CPA (Cisco Networking Academy)</li>
+      <li>Salesforce Associate (Udemy)</li>
+      <li>World Bank — Fiber-Optic Networks certificate</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section container reveal">
+    <h2>Contact</h2>
+    <div class="split">
+      <div>
         <p><i class="fas fa-envelope"></i> <a href="mailto:lokeish3@gmail.com">lokeish3@gmail.com</a></p>
-        <p><i class="fab fa-github"></i> <a href="https://github.com/lokeish-vuppu" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/lokeish-vuppu-b231271b0/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-    </section>
+        <p><i class="fas fa-phone-alt"></i> <a href="tel:+15715695126">+1 (571) 569-5126</a></p>
+        <p><i class="fab fa-github"></i> <a href="https://github.com/lokeish-vuppu" target="_blank">GitHub</a></p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/lokeish-vuppu-b231271b0/" target="_blank">LinkedIn</a></p>
+      </div>
+      <div>
+        <h3>Quick Pitch</h3>
+        <p class="small">I build maintainable solutions that reduce manual work and scale. If you're hiring for software engineering, embedded systems, or cloud roles, I'd love to discuss fit.</p>
+        <a class="btn primary" href="mailto:lokeish3@gmail.com?subject=Job%20Opportunity">Reach Out</a>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Lokeish's Portfolio | All Rights Reserved.</p>
-        </div>
-    </footer>
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; 2025 Lokeish Vuppu • <a href="resume.pdf" download>Resume</a></small>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js" defer></script>
 </body>
 </html>
